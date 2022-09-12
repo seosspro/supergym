@@ -1,0 +1,141 @@
+.price {
+  z-index: 1;
+}
+
+.price__list {
+  @include list-reset;
+
+  display: flex;
+}
+
+.price__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  min-height: 448px;
+
+  &:hover .price__buy-btn {
+    color: $white;
+    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    border-color: transparent;
+    border-right-color: #003EB7;
+    border-left-color: #ED0233;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    bottom: 7px;
+    right: 7px;
+    background-color: $white;
+    z-index: 1;
+
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(148.82deg, $price-red 0.85%, $price-blue 100%);
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.price__item:not(:nth-of-type(3n)) {
+  margin-right: 40px;
+}
+
+.price__item-wrap {
+  position: relative;
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price__title {
+  @include font($roboto-condensed, 26px, 28px, 700);
+
+  margin-top: 62px;
+  margin-bottom: 11px;
+
+  color: $price-title;
+}
+
+.price__time {
+  @include font($roboto-condensed, 16px, 24px, 400);
+
+  margin-bottom: 82px;
+
+  color: $price-time;
+}
+
+.price__value {
+  @include font($roboto-condensed, 60px, 60px, 700);
+
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 48px;
+  margin-left: 4px;
+
+  color: $price-value;
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    font-size: 100px;
+    color: $price-value-shadow;
+    z-index: -1;
+    bottom: 25px;
+    left: -22px;
+    opacity: 0.48;
+  }
+}
+
+.price__value span {
+  font-weight: 400;
+  color: $price-title;
+}
+
+.price__buy-btn {
+  width: 206px;
+  padding: 24px 40px;
+  text-transform: uppercase;
+  color: $price-title;
+  border: 2px solid $black-blue;
+}
+
+@media (max-width: $tablet-max) {
+  .price__list {
+    flex-direction: column;
+  }
+
+  .price__item {
+    width: 455px;
+    min-height: 460px;
+  }
+
+  .price__item:not(:nth-of-type(3n)) {
+    margin-right: 0;
+    margin-bottom: 28px;
+  }
+
+  .price__title {
+    margin-top: 67px;
+  }
+}

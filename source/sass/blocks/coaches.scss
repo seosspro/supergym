@@ -1,0 +1,343 @@
+.coaches__container {
+  display: none;
+  max-width: 1272px;
+  padding: 0;
+  padding-bottom: 120px;
+
+}
+
+.coaches__title {
+  @include font($bebas-neue, 49px, 49px, 700);
+
+  width: 1160px;
+
+  margin-left: 2px;
+  margin: 0 auto;
+  margin-bottom: 53px;
+
+  letter-spacing: 0.03em;
+  overflow-wrap: break-word;
+}
+
+.coaches__lists-container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 56px;
+}
+
+.coaches__list {
+  @include list-reset;
+
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1160px;
+  min-height: 294px;
+}
+
+.coaches__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 260px;
+  min-height: 294px;
+  margin-right: 40px;
+
+  background-color: #aeb7c8;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+
+  pictupe {
+    position: absolute;
+
+    // width: 260px;
+    height: 294px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &:hover .coaches__info::after,
+  &:hover .coaches__info > * {
+    opacity: 1;
+  }
+
+  &:hover .coaches__bottom-name {
+    opacity: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #aeb7c8;
+  }
+}
+
+.coaches__item-wrap {
+  position: absolute;
+  z-index: 2;
+
+  max-width: 260px;
+  min-height: 294px;
+}
+
+.coaches__info {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 54px;
+  padding-bottom: 34px;
+  min-height: 294px;
+
+  color: $white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    // min-height: 294px;
+    height: 100%;
+
+    background-color: $coaches-hover;
+
+    opacity: 0;
+  }
+}
+
+.coaches__info > * {
+  opacity: 0;
+}
+
+.coaches__bottom-name {
+  @include font($roboto-condensed, 18px, 22px, 700);
+
+  opacity: 1;
+
+  position: absolute;
+  top: 246px;
+  left: 50%;
+  margin-left: -57px;
+  z-index: 10;
+
+}
+
+.coaches__info-name {
+  @include font($roboto-condensed, 18px, 22px, 700);
+}
+
+.coaches__sport {
+  @include font($roboto-condensed, 16px, 22px, 400);
+
+  margin-bottom: 33px;
+
+  color: $coaches-sport;
+}
+
+.coaches__achievement-list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px 6px 71px;
+}
+
+.coaches__achievement-item {
+  @include font($roboto-condensed, 14px, 20px, 400);
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    background-color: $white;
+    border-radius: 50%;
+  }
+}
+
+.coaches__achievement-item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.coaches__arrows {
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  justify-content: space-between;
+
+  // max-width: 1272px;
+  width: 100%;
+  height: 38px;
+  margin-top: -18px;
+}
+
+@media (max-width: $tablet-max) {
+  .coaches__container {
+    padding-top: 40px;
+    // padding: 40px 70px 100px;
+    padding: 40px 45px 100px;
+  }
+
+  .coaches__title {
+    @include font($bebas-neue, 42px, 42px, 700);
+
+    width: 678px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    // margin-left: 2px;
+
+    text-align: center;
+  }
+
+  .coaches__lists-container {
+    max-width: 678px;
+  }
+
+  .coaches__list {
+    max-width: 596px;
+    margin-left: 42px;
+  }
+
+  .coaches__item-wrap {
+    min-width: 260px;
+  }
+
+  .coaches__item {
+    min-width: 260px;
+    margin-right: 50px;
+
+    pictupe {
+      min-width: 260px;
+
+      img {
+        min-width: 260px;
+      }
+    }
+  }
+
+  .coaches__item:not(:nth-of-type(2n)) {
+    margin-right: 34px;
+  }
+
+  .coaches__button-list {
+    top: 43%;
+    left: 0;
+
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .coaches__container {
+    min-height: 378px;
+    padding-top: 35px;
+    padding-bottom: 70px;
+    padding: 34px 14px 40px;
+  }
+
+  .coaches__title {
+    @include font($bebas-neue, 32px, 32px, 700);
+
+    width: 320px;
+    // margin-bottom: 42px;
+    // margin-left: 2px;
+    margin-top: 33px;
+    margin-bottom: 10px;
+
+    text-align: center;
+  }
+
+  .coaches__lists-container {
+    max-width: 292px;
+  }
+
+  .coaches__list {
+    min-width: 226px;
+    height: 274px;
+    margin-left: 0;
+  }
+
+  .coaches__item-wrap {
+    position: absolute;
+    z-index: 2;
+
+    min-width: 226px;
+  }
+
+  .coaches__item {
+    max-width: 226px;
+    max-height: 274px;
+
+    pictupe {
+      max-width: 226px;
+      max-height: 274px;
+
+      img {
+        max-width: 226px;
+        max-height: 274px;
+      }
+    }
+  }
+
+  .coaches__item:not(:nth-of-type(2n)) {
+    margin-right: 30px;
+  }
+
+  .coaches__info {
+    max-width: 226px;
+    padding-top: 46px;
+  }
+
+  .coaches__achievement-list {
+    margin: 0 32px 6px 50px;
+  }
+
+  .coaches__button-list {
+    top: 45%;
+    left: 0;
+
+    width: 100%;
+  }
+
+  .coaches__button {
+    width: 12px;
+    height: 30px;
+  }
+
+  .coaches__bottom-name {
+    top: 238px;
+    margin-left: -60px;
+  }
+
+  .coaches__arrows {
+    height: 19px;
+  }
+}

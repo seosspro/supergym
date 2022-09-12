@@ -1,0 +1,131 @@
+.free-lesson {
+  width: 560px;
+}
+
+.free-lesson__container {
+  padding: 68px 0;
+}
+
+.free-lesson__title {
+  @include font($bebas-neue, 49px, 49px, 700);
+
+  margin-bottom: 35px;
+
+  color: $white;
+  letter-spacing: 0.03em;
+}
+
+.free-lesson form {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+}
+
+.free-lesson__input-wrap {
+  display: flex;
+  margin-bottom: 28px;
+
+  input {
+    flex-grow: 1;
+    padding: 10px 0 6px;
+
+    color: $white;
+
+    border: none;
+    border-bottom: 1px solid $input-border;
+    background-color: transparent;
+    outline: 0;
+    caret-color: $white;
+
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $white;
+    }
+
+    &::placeholder {
+      @include font($roboto-condensed, 14px, 14px, 400);
+
+      color: $white;
+    }
+  }
+}
+
+.free-lesson__button {
+  padding: 17px 56px;
+
+  letter-spacing: 0.14em;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: $tablet-max) {
+  .free-lesson {
+    width: 100%;
+    background-color: $black-blue;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  .free-lesson__container {
+    width: 502px;
+    margin: 0 auto;
+    padding: 68px 0;
+    padding-right: 30px;
+  }
+
+  .free-lesson__title {
+    @include font($bebas-neue, 42px, 42px, 700);
+
+    margin-bottom: 29px;
+  }
+
+  .free-lesson form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .free-lesson__input-wrap {
+    input {
+      &:not(:last-of-type) {
+        margin-right: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .free-lesson__container {
+    width: 320px;
+    padding: 68px 15px;
+  }
+
+  .free-lesson__title {
+    @include font($bebas-neue, 32px, 32px, 700);
+
+    margin-bottom: 30px;
+  }
+
+  .free-lesson__input-wrap {
+    flex-direction: column;
+    margin-bottom: 37px;
+
+    input {
+      &:first-of-type {
+        margin-bottom: 28px;
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 0;
+      }
+    }
+  }
+}

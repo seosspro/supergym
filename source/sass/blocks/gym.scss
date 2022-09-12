@@ -1,0 +1,301 @@
+.gym {
+  position: relative;
+  min-height: 756px;
+  padding-top: 120px;
+}
+
+.gym__container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 116px;
+}
+
+.gym__text-content {
+  max-width: 355px;
+  margin-top: 47px;
+  margin-left: 60px;
+}
+
+.gym__title {
+  @include font($bebas-neue, 49px, 49px, 700);
+
+  margin: 0;
+  margin-bottom: 8px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.gym__text {
+  @include font($roboto-condensed, 18px, 27px, 400);
+
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.gym__description {
+  @include font($roboto-condensed, 16px, 24px, 300);
+
+  margin: 0;
+}
+
+.gym__description:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.gym__img-wrap {
+  position: relative;
+}
+
+.gym__image {
+  width: 660px;
+  height: 401px;
+
+  background-color: $gym-bg;
+}
+
+.gym__video {
+  position: absolute;
+  top: 288px;
+  left: -63px;
+
+  width: 364px;
+  height: 228px;
+
+  background-color: $gym-bg;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $video-hover;
+    z-index: 1;
+  }
+}
+
+.gym__video-btn {
+  position: absolute;
+  z-index: 2;
+
+  width: 72px;
+  height: 72px;
+  left: 146px;
+  top: 79px;
+  border-radius: 50%;
+
+  background: linear-gradient(44.89deg, $video-blue 25.38%, $video-red 74.89%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/video-ellipse.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &:hover {
+    box-shadow: 0 0 15px #113aae, 0 0 20px #ec0233;
+    transition: all .3s;
+  }
+}
+
+.gym__video-icon {
+  position: absolute;
+  left: 32px;
+  top: 28px;
+}
+
+@media (max-width: $tablet-max) {
+  .gym {
+    min-height: 854px;
+    padding-top: 99px;
+    padding-bottom: 100px;
+  }
+
+  .gym__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 45px;
+  }
+
+  .gym__text-content {
+    max-width: 502px;
+    margin: 0;
+
+    text-align: center;
+  }
+
+  .gym__title {
+    @include font($bebas-neue, 42px, 42px, 700);
+
+    margin: 0;
+    margin-bottom: 9px;
+
+    letter-spacing: 0.03em;
+  }
+
+  .gym__text {
+    margin-bottom: 33px;
+  }
+
+  .gym__description--hidden {
+    display: none;
+  }
+
+  .gym__img-wrap {
+    margin-top: 36px;
+  }
+
+  .gym__image {
+    width: 678px;
+    height: 345px;
+  }
+
+  .gym__image img {
+    width: 100%;
+  }
+
+  .gym__video {
+    top: 261px;
+    left: 30.5%;
+
+    width: 266px;
+    height: 167px;
+  }
+
+  .gym__video-btn {
+    position: absolute;
+    z-index: 2;
+
+    width: 52px;
+    height: 52px;
+    top: 57px;
+    left: 106px;
+
+    border-radius: 50%;
+    background: linear-gradient(44.89deg, $video-blue 25.38%, $video-red 74.89%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+
+      width: 72px;
+      height: 73px;
+
+      background-image: url(../img/video-ellipse.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .gym__video-icon {
+    position: absolute;
+    left: 22px;
+    top: 21px;
+
+    width: 11px;
+    height: 11px;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .gym {
+    min-height: 925px;
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .gym__container {
+
+    padding: 0;
+  }
+
+  .gym__text-content {
+    padding: 0 24px 0 15px;
+
+    text-align: left;
+  }
+
+  .gym__title {
+    @include font($bebas-neue, 32px, 32px, 700);
+
+    margin-bottom: 7px;
+  }
+
+  .gym__text {
+    margin-bottom: 24px;
+  }
+
+  .gym__description {
+    padding-right: 18px;
+  }
+
+  .gym__img-wrap {
+    margin-top: 25px;
+  }
+
+  .gym__image {
+    width: 320px;
+    height: 313px;
+    margin-bottom: 40px;
+  }
+
+  .gym__image img {
+    max-width: 100%;
+    width: 320px;
+    height: 313px;
+  }
+
+  .gym__video {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 99%;
+      background-color: $video-hover;
+      z-index: 1;
+    }
+  }
+
+  .gym__video-btn {
+    width: 72px;
+    height: 72px;
+    left: 128px;
+    top: 54px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: -14px;
+      // z-index: 3;
+      width: 100px;
+      height: 100px;
+      background-image: url(../img/video-ellipse.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .gym__video-icon {
+    position: absolute;
+    left: 32px;
+    top: 30px;
+  }
+}

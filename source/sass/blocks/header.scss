@@ -1,0 +1,258 @@
+.header {
+  width: 100%;
+  min-height: 658px;
+
+  background: $hero-gradient-desktop;
+}
+
+.header__container {
+  padding-bottom: 50px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
+  *:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.header__tel {
+  @include font($bebas-neue, 26px, 26px, 700);
+
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -4px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 396px;
+}
+
+.header__content-city {
+  @include font($bebas-neue, 49px, 50px, 400);
+
+  width: 396px;
+  margin: 0;
+  margin-top: 116px;
+
+  color: $white;
+  text-align: end;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+.header__content-wrap {
+  position: relative;
+
+  margin-bottom: 84px;
+}
+
+.header__content-title {
+  @include font($bebas-neue, 110px, 109px, 700);
+
+  width: 300px;
+  margin: 0;
+  margin-top: 10px;
+
+  color: $white;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  overflow-wrap: break-word;
+}
+
+.header__content-text {
+  @include font($roboto-condensed, 14px, 21px, 400);
+
+  width: 115px;
+  margin: 0;
+  margin-top: -90px;
+  margin-left: -80px;
+
+  color: $white;
+  text-align: right;
+}
+
+.header__image {
+  width: 500px;
+  height: 556px;
+
+  background-color: $superhero;
+
+  img {
+    display: block;
+  }
+}
+
+.header__socials {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 126px;
+}
+
+.header__socials-list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 44px;
+}
+
+.header__socials-item:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+@media (max-width: $tablet-max) {
+  .header {
+    min-height: 554px;
+
+    background: $hero-gradient-tablet;
+  }
+
+  .header__top {
+    margin-top: 40px;
+    margin-bottom: 18px;
+  }
+
+  .header__logo-icon {
+    width: 82px;
+    height: 18px;
+  }
+
+  .header__tel {
+    @include font($bebas-neue, 24px, 24px, 700);
+
+    letter-spacing: 0.02em;
+  }
+
+  .header__image {
+    width: 324px;
+    height: 390px;
+
+    background-color: $superhero;
+  }
+
+  .header__main {
+    margin-top: 0;
+  }
+
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 325px;
+  }
+
+  .header__content-city {
+    @include font($bebas-neue, 34px, 34px, 400);
+
+    margin-top: 54px;
+  }
+
+  .header__content-wrap {
+    position: relative;
+
+    margin-bottom: 57px;
+  }
+
+  .header__content-title {
+    @include font($bebas-neue, 86px, 86px, 700);
+
+    width: 235px;
+    margin-top: 5px;
+
+  }
+
+  .header__content-text {
+    @include font($roboto-condensed, 14px, 21px, 400);
+
+    width: 115px;
+    margin-top: -80px;
+    margin-left: -92px;
+
+    color: $white;
+    text-align: right;
+  }
+
+  .header__socials {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .header {
+    min-height: 491px;
+
+    background: $hero-gradient-mobile;
+  }
+
+  .header__top {
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+
+  .header__logo-icon {
+    width: 68px;
+    height: 15px;
+  }
+
+  .header__tel {
+    @include font($bebas-neue, 20px, 20px, 700);
+  }
+
+  .header__image {
+    display: none;
+  }
+
+  .header__main {
+    justify-content: center;
+  }
+
+  .header__content {
+    width: 290px;
+  }
+
+  .header__content-city {
+    @include font($bebas-neue, 28px, 28px, 400);
+
+    margin-top: 54px;
+  }
+
+  .header__content-wrap {
+    margin-bottom: 54px;
+  }
+
+  .header__content-title {
+    @include font('Bebas Neue', 78px, 78px, 700);
+
+    // font-family: "Bebas Neue","Arial",sans-serif;
+    // font-size: 78px;
+    // line-height: 78px;
+    // font-weight: 700;
+    // letter-spacing: 0.03em;
+
+    // выравниваем текст на айфоне
+    // width: 350px;
+    // width: 214px;
+    margin-top: 12px;
+  }
+
+  .header__content-text {
+    margin-top: -75px;
+    margin-left: -58px;
+  }
+}

@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+
+  cursor: pointer;
+}

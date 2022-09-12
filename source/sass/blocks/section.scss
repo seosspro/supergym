@@ -1,0 +1,26 @@
+.section {
+  min-height: 337px;
+  background: linear-gradient(to right, $black-blue 50%, $white 50%);
+}
+
+.section__container {
+  display: flex;
+  justify-content: space-between;
+
+  @media(max-width:$mobile-max){
+    padding: 0;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .section {
+    min-height: 337px;
+
+    background: $white
+  }
+
+  .section__container {
+    flex-direction: column;
+    padding: 0;
+  }
+}
