@@ -1,5 +1,5 @@
 import IMask from 'imask';
-import Swiper from 'swiper';
+import Swiper from 'swiper/swiper-bundle';
 
 // переключатель тарифов
 window.addEventListener('load', () => {
@@ -43,5 +43,28 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.reviews__button-next',
     prevEl: '.reviews__button-prev',
+  },
+});
+
+const coachesSwiper = new Swiper('.mySwiper', {
+  slidesPerView: 1,
+        spaceBetween: 40,
+  navigation: {
+    nextEl: '.coaches__button-next',
+    prevEl: '.coaches__button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 42,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 60,
+    },
   },
 });

@@ -1,5 +1,4 @@
 .coaches__container {
-  display: none;
   max-width: 1272px;
   padding: 0;
   padding-bottom: 120px;
@@ -36,9 +35,64 @@
 
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   max-width: 1160px;
   min-height: 294px;
+}
+
+.coaches__button-prev {
+  left: 10px;
+  right: auto;
+  position: absolute;
+  top: 50%;
+  z-index: 9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    position: relative;
+    content: url("../../img/arrow-left.svg");
+
+    @media (max-width: $mobile-max) {
+      width: 10px;
+      height: 19px;
+    }
+  }
+}
+
+.coaches__button-next {
+  right: 10px;
+  left: auto;
+  position: absolute;
+  top: 50%;
+  z-index: 9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    position: relative;
+    content: url("../../img/arrow-right.svg");
+
+    @media (max-width: $mobile-max) {
+      width: 10px;
+      height: 19px;
+    }
+  }
+}
+
+.coaches__button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.coaches__button-prev.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
 }
 
 .coaches__item {
@@ -50,9 +104,6 @@
   max-width: 260px;
   min-height: 294px;
   margin-right: 40px;
-
-  background-color: #aeb7c8;
-
   overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-color: transparent transparent;

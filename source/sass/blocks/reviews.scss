@@ -54,12 +54,13 @@
   align-items: center;
   justify-content: center;
 
-  &::after{
+  &::after {
     position: relative;
     content: url("../../img/arrow-left.svg");
 
-    @media(max-width:$mobile-max){
-      content: url("../../img/arrow-left-mobile.svg");
+    @media (max-width: $mobile-max) {
+      width: 10px;
+      height: 19px;
     }
   }
 }
@@ -75,14 +76,27 @@
   align-items: center;
   justify-content: center;
 
-  &::after{
+  &::after {
     position: relative;
     content: url("../../img/arrow-right.svg");
 
-    @media(max-width:$mobile-max){
-      content: url("../../img/arrow-right-mobile.svg");
+    @media (max-width: $mobile-max) {
+      width: 10px;
+      height: 19px;
     }
   }
+}
+
+.reviews__button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.reviews__button-prev.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
 }
 
 .reviews__item {
