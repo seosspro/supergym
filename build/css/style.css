@@ -742,17 +742,13 @@ a {
   background-color: #abadc0;
 }
 
-.gym__video::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(20, 54, 122, 0.5);
-  z-index: 1;
-}
-
 .gym__video--enabled {
   cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .gym__video--enabled .gym__video-btn {
@@ -765,6 +761,15 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.gym__video-link::before {
+  content: "";
+  background-color: rgba(20, 54, 122, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .gym__video-btn {
@@ -2221,7 +2226,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 560px;
+  width: 566px;
   min-height: 242px;
   padding-top: 62px;
   padding-left: 62px;

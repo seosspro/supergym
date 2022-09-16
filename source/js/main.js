@@ -48,7 +48,7 @@ const swiper = new Swiper('.swiper', {
 
 const coachesSwiper = new Swiper('.mySwiper', {
   slidesPerView: 1,
-        spaceBetween: 40,
+  spaceBetween: 40,
   navigation: {
     nextEl: '.coaches__button-next',
     prevEl: '.coaches__button-prev',
@@ -115,9 +115,9 @@ function createIframe(id) {
 }
 
 function generateURL(id) {
-  let query = '?v=9TZXsZItgdw=0&autoplay=1';
+  let query = '?rel=0&showinfo=0&autoplay=1';
 
-  return 'https://www.youtube.com/embed/' + id + query;
+  return 'https://www.youtube.com/embed/9TZXsZItgdw' + query;
 }
 
 findVideos();
