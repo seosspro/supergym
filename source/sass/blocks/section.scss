@@ -1,13 +1,17 @@
 .section {
   min-height: 337px;
   background: linear-gradient(to right, $black-blue 50%, $white 50%);
+
+  @media (min-width: $tablet-max) {
+    border-top: 1px solid #74819c;
+  }
 }
 
 .section__container {
   display: flex;
   justify-content: space-between;
 
-  @media(max-width:$mobile-max){
+  @media (max-width: $mobile-max) {
     padding: 0;
   }
 }
@@ -16,7 +20,7 @@
   .section {
     min-height: 337px;
 
-    background: $white
+    background: $white;
   }
 
   .section__container {

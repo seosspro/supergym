@@ -19,11 +19,12 @@
 
 .reviews__container {
   position: relative;
-
   display: flex;
   flex-direction: column;
-  max-width: 606px;
   min-width: 0;
+  max-width: 560px;
+  padding: 0;
+  height: 242px;
 }
 
 .reviews__list {
@@ -101,10 +102,7 @@
 
 .reviews__item {
   display: flex;
-  width: 560px;
   min-height: 242px;
-  padding-top: 62px;
-  padding-left: 62px;
   padding: 55px 62px 57px;
 
   color: $white;
@@ -119,13 +117,8 @@
 .reviews__item-next {
   width: 560px;
   min-height: 242px;
-  padding-top: 62px;
-  padding-left: 62px;
-
   padding: 55px 62px 57px;
-
   color: $white;
-
   background-color: $review-item;
 }
 
@@ -137,7 +130,7 @@
 
 .reviews__item-image {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   margin-top: 8px;
   margin-right: 28px;
@@ -164,11 +157,13 @@
   .reviews {
     min-height: 465px;
     padding-top: 48px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 
   .reviews__container {
-    width: 560px;
+    max-width: 566px;
+    padding: 0;
+    min-width: 0;
   }
 
   .reviews__title {

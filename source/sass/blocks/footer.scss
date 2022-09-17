@@ -39,7 +39,7 @@
   margin-right: 40px;
 
   color: $white;
-  letter-spacing: 0.005em;
+  letter-spacing: 0.01em;
 }
 
 .footer__socials-list {
@@ -54,7 +54,7 @@
 }
 
 .footer__socials-item:not(:last-of-type) {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 @media (max-width: $tablet-max) {
@@ -150,7 +150,7 @@
     min-width: 143px;
     margin-left: 0;
 
-    @media(max-width:$mobile-max){
+    @media (max-width: $mobile-max) {
       column-gap: 11px;
     }
   }
@@ -158,23 +158,23 @@
   .footer__socials-item:not(:last-of-type) {
     margin-right: 35px;
 
-    @media(max-width:$mobile-max){
+    @media (max-width: $mobile-max) {
       margin-right: 0;
     }
   }
 
   .footer__socials-link {
-    &[aria-label=Вконтакте] svg {
+    &[aria-label="Вконтакте"] svg {
       width: 25px;
       height: 25px;
     }
 
-    &[aria-label=Instagram] svg {
+    &[aria-label="Instagram"] svg {
       width: 25px;
       height: 25px;
     }
 
-    &[aria-label=Facebook] svg {
+    &[aria-label="Facebook"] svg {
       width: 25px;
       height: 25px;
     }

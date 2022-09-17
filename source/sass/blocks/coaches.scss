@@ -2,18 +2,13 @@
   max-width: 1272px;
   padding: 0;
   padding-bottom: 120px;
-
 }
 
 .coaches__title {
   @include font($bebas-neue, 49px, 49px, 700);
-
   width: 1160px;
-
-  margin-left: 2px;
   margin: 0 auto;
   margin-bottom: 53px;
-
   letter-spacing: 0.03em;
   overflow-wrap: break-word;
 }
@@ -40,15 +35,19 @@
 }
 
 .coaches__button-prev {
-  left: 10px;
+  left: 0;
   right: auto;
   position: absolute;
-  top: 50%;
+  top: 44%;
   z-index: 9;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    opacity: 0.4;
+  }
 
   &::after {
     position: relative;
@@ -62,15 +61,19 @@
 }
 
 .coaches__button-next {
-  right: 10px;
+  right: 0;
   left: auto;
   position: absolute;
-  top: 50%;
+  top: 44%;
   z-index: 9;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    opacity: 0.4;
+  }
 
   &::after {
     position: relative;
@@ -109,10 +112,8 @@
   scrollbar-color: transparent transparent;
   scrollbar-width: thin;
 
-  pictupe {
+  picture {
     position: absolute;
-
-    // width: 260px;
     height: 294px;
 
     img {
@@ -193,7 +194,6 @@
   left: 50%;
   margin-left: -57px;
   z-index: 10;
-
 }
 
 .coaches__info-name {
@@ -252,19 +252,14 @@
 
 @media (max-width: $tablet-max) {
   .coaches__container {
-    padding-top: 40px;
-    // padding: 40px 70px 100px;
     padding: 40px 45px 100px;
   }
 
   .coaches__title {
     @include font($bebas-neue, 42px, 42px, 700);
-
     width: 678px;
     margin-top: 40px;
     margin-bottom: 0;
-    // margin-left: 2px;
-
     text-align: center;
   }
 
@@ -285,7 +280,7 @@
     min-width: 260px;
     margin-right: 50px;
 
-    pictupe {
+    picture {
       min-width: 260px;
 
       img {
@@ -309,8 +304,6 @@
 @media (max-width: $mobile-max) {
   .coaches__container {
     min-height: 378px;
-    padding-top: 35px;
-    padding-bottom: 70px;
     padding: 34px 14px 40px;
   }
 
@@ -318,11 +311,8 @@
     @include font($bebas-neue, 32px, 32px, 700);
 
     width: 320px;
-    // margin-bottom: 42px;
-    // margin-left: 2px;
     margin-top: 33px;
     margin-bottom: 10px;
-
     text-align: center;
   }
 
@@ -347,7 +337,7 @@
     max-width: 226px;
     max-height: 274px;
 
-    pictupe {
+    picture {
       max-width: 226px;
       max-height: 274px;
 

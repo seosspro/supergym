@@ -18,43 +18,60 @@ $retina-dppx: 1.5dppx;
 
 // Fonts
 $roboto-condensed: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
-$bebas-neue: "Bebas Neue","Arial", sans-serif;
+$bebas-neue: "Bebas Neue", "Arial", sans-serif;
 
 // Colors
-$white: #FFFFFF;
-$sub-bg: #F8F9FC;
-$advantages-bg: #F8F9FC;
+$white: #ffffff;
+$sub-bg: #f8f9fc;
+$advantages-bg: #f8f9fc;
 $superhero: #0e1356;
 $black-blue: #102654;
-$price-value-shadow: #E8E8E8;
+$price-value-shadow: #e8e8e8;
 $price-title: #102654;
-$price-time: #495A7D;
-$price-value: #103AAE;
-$price-blue: #00359F;
-$price-red: #D10A42;
-$promo-bg: #ED0233;
+$price-time: #495a7d;
+$price-value: #103aae;
+$price-blue: #00359f;
+$price-red: #d10a42;
+$promo-bg: #ed0233;
 $promo-img: #282b83;
 $promotions-image: #5482dd;
-$promotions-side: #1C3374;
-$gradient-red: #D10A42;
-$gradient-blue: #00359F;
-$number-blue: #0041CA;
-$number-red: #D10A42;
-$coaches-sport: #B6BDCC;
-$advantages-center: #1C3374;
+$promotions-side: #1c3374;
+$gradient-red: #d10a42;
+$gradient-blue: #00359f;
+$number-blue: #0041ca;
+$number-red: #d10a42;
+$coaches-sport: #b6bdcc;
+$advantages-center: #1c3374;
 $coaches-hover: rgba(16, 38, 84, 0.89);
-$contacts-border: #74819C;
-$input-border: #74819C;
-$footer-bg: #030A1A;
+$contacts-border: #74819c;
+$input-border: #74819c;
+$footer-bg: #030a1a;
 $gym-bg: #abadc0;
 $video-hover: rgba(20, 54, 122, 0.5);
-$video-blue: #003D85;
-$video-red: #B80027;
-$review-item: #1C3374;
+$video-blue: #003d85;
+$video-red: #b80027;
+$review-item: #1c3374;
 $sub-month-item: rgba(16, 38, 84, 0.5);
 $sub-item-price: #103aae;
 
-
-$hero-gradient-desktop: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
-$hero-gradient-tablet: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
-$hero-gradient-mobile: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$hero-gradient-desktop: conic-gradient(
+  from 130.31deg at 16.03% 39.06%,
+  #b80027 -46.69deg,
+  #003d85 32.24deg,
+  #b80027 313.31deg,
+  #003d85 392.24deg
+);
+$hero-gradient-tablet: conic-gradient(
+  from 139.4deg at 20.7% 35.74%,
+  #b80027 -46.69deg,
+  #003d85 32.24deg,
+  #b80027 313.31deg,
+  #003d85 392.24deg
+);
+$hero-gradient-mobile: conic-gradient(
+  from 171.43deg at 35.31% 34.22%,
+  #b80027 -46.69deg,
+  #003d85 32.24deg,
+  #b80027 313.31deg,
+  #003d85 392.24deg
+);

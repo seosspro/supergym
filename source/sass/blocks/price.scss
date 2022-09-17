@@ -19,10 +19,10 @@
 
   &:hover .price__buy-btn {
     color: $white;
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     border-color: transparent;
-    border-right-color: #003EB7;
-    border-left-color: #ED0233;
+    border-right-color: #003eb7;
+    border-left-color: #ed0233;
   }
 
   &::before {
@@ -34,11 +34,10 @@
     right: 7px;
     background-color: $white;
     z-index: 1;
-
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

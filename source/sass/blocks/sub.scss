@@ -158,9 +158,6 @@
 
     border-style: solid;
     border-width: 7px;
-    -moz-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
-    -webkit-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
-    -o-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
     border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
     border-image-slice: 1;
     opacity: 0;
@@ -190,10 +187,7 @@
   margin-right: 0;
 }
 
-
 .sub__subtitle {
-
-
   margin: 0;
 
   font-weight: 700;
@@ -257,16 +251,12 @@
   min-height: 66px;
   margin: 0 auto;
   margin-top: 34px;
-
   color: #102654;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-
   border: 2px solid #102654;
-  background: #fff;
-
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  background: #ffffff;
+  transition: all 0.3s;
 }
 
 .sub__list-hidden {
@@ -278,7 +268,7 @@
   position: absolute;
   z-index: 0;
   bottom: -150px;
-  right: 37px;
+  right: 0;
 
   width: 287px;
   height: 494px;
@@ -355,7 +345,7 @@
   }
 
   .sub__price {
-    &::before{
+    &::before {
       margin-left: calc(60% - 145px);
     }
   }

@@ -1,10 +1,3 @@
-// .coaches__list
-.slick-slider {
-  // display: flex;
-  // justify-content: space-between;
-  // max-width: 1160px;
-}
-
 .coaches__item {
   min-width: 0;
 }
@@ -18,8 +11,6 @@
   align-items: flex-start;
 }
 
-
-/* coaches slider */
 .coaches__list {
   position: relative;
 }
@@ -29,9 +20,6 @@
 }
 
 .coaches__arrows .slick-arrow {
-  // position: absolute;
-  // top: 50%;
-  // z-index: 999;
   font-size: 0;
   width: 18px;
   height: 38px;
@@ -41,12 +29,12 @@
 
 .coaches__arrows .slick-arrow.slick-prev {
   left: -57px;
-  background: url('../img/icon-slider-arrow.svg') 0 0 / 100% no-repeat;
+  background: url("../img/icon-slider-arrow.svg") 0 0 / 100% no-repeat;
 }
 
 .coaches__arrows .slick-arrow.slick-next {
   right: -60px;
-  background: url('../img/icon-slider-arrow.svg') 0 0 / 100% no-repeat;
+  background: url("../img/icon-slider-arrow.svg") 0 0 / 100% no-repeat;
   transform: rotate(180deg);
 }
 
@@ -117,13 +105,13 @@
 
   margin-top: -18px;
 
-  background: url('../img/icon-slider-arrow.svg') 0 0 / 100% no-repeat;
+  background: url("../img/icon-slider-arrow.svg") 0 0 / 100% no-repeat;
 }
 
 .reviews__list .slick-arrow.slick-next {
   right: -57px;
 
-  background: url('../img/icon-slider-arrow.svg') 0 0 / 100% no-repeat;
+  background: url("../img/icon-slider-arrow.svg") 0 0 / 100% no-repeat;
   transform: rotate(180deg);
 }
 

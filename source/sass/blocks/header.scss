@@ -174,7 +174,6 @@
 
     width: 235px;
     margin-top: 5px;
-
   }
 
   .header__content-text {
@@ -237,7 +236,7 @@
   }
 
   .header__content-title {
-    @include font('Bebas Neue', 78px, 78px, 700);
+    @include font("Bebas Neue", 78px, 78px, 700);
 
     // font-family: "Bebas Neue","Arial",sans-serif;
     // font-size: 78px;

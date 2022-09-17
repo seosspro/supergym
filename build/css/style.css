@@ -501,21 +501,21 @@ a {
   text-align: center;
   letter-spacing: 0.05em;
   vertical-align: middle;
-  color: #FFFFFF;
+  color: #ffffff;
   background: none;
-  border: 4px solid #FFFFFF;
+  border: 4px solid #ffffff;
   cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
   border-radius: 2px;
-  text-shadow: 0 0 10px #FFFFFF;
-  -webkit-box-shadow: 0 0 10px #FFFFFF;
-  box-shadow: 0 0 10px #FFFFFF;
-  -webkit-transition: all .1s;
-  -o-transition: all .1s;
-  transition: all .1s;
+  text-shadow: 0 0 10px #ffffff;
+  -webkit-box-shadow: 0 0 10px #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .button:active {
@@ -525,7 +525,7 @@ a {
 .header {
   width: 100%;
   min-height: 658px;
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 
 .header__container {
@@ -553,7 +553,7 @@ a {
   font-size: 26px;
   line-height: 26px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -590,7 +590,7 @@ a {
   width: 396px;
   margin: 0;
   margin-top: 116px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: end;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -610,7 +610,7 @@ a {
   width: 300px;
   margin: 0;
   margin-top: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -626,7 +626,7 @@ a {
   margin: 0;
   margin-top: -90px;
   margin-left: -80px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: right;
 }
 
@@ -783,8 +783,8 @@ iframe {
   top: 79px;
   border-radius: 50%;
   display: none;
-  background: -o-linear-gradient(45.11deg, #003D85 25.38%, #B80027 74.89%);
-  background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+  background: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%);
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
 }
 
 .gym__video-btn::before {
@@ -794,7 +794,7 @@ iframe {
   left: -14px;
   width: 100px;
   height: 100px;
-  background-image: url(../img/video-ellipse.png);
+  background-image: url("../img/video-ellipse.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -816,7 +816,7 @@ iframe {
 
 .sub {
   position: relative;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 }
 
 .sub__main-container {
@@ -866,7 +866,7 @@ iframe {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 }
 
 .sub__month-list,
@@ -1103,10 +1103,10 @@ iframe {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   border: 2px solid #102654;
-  background: #fff;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  background: #ffffff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .sub__list-hidden {
@@ -1118,7 +1118,7 @@ iframe {
   position: absolute;
   z-index: 0;
   bottom: -150px;
-  right: 37px;
+  right: 0;
   width: 287px;
   height: 494px;
 }
@@ -1153,12 +1153,12 @@ iframe {
 }
 
 .price__item:hover .price__buy-btn {
-  color: #FFFFFF;
-  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  color: #ffffff;
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border-color: transparent;
-  border-right-color: #003EB7;
-  border-left-color: #ED0233;
+  border-right-color: #003eb7;
+  border-left-color: #ed0233;
 }
 
 .price__item::before {
@@ -1168,19 +1168,19 @@ iframe {
   left: 7px;
   bottom: 7px;
   right: 7px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   z-index: 1;
 }
 
 .price__item::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%);
-  background: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  background: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+  background: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   z-index: -1;
   opacity: 0;
 }
@@ -1224,7 +1224,7 @@ iframe {
   line-height: 24px;
   font-weight: 400;
   margin-bottom: 82px;
-  color: #495A7D;
+  color: #495a7d;
 }
 
 .price__value {
@@ -1236,14 +1236,14 @@ iframe {
   z-index: 1;
   margin-bottom: 48px;
   margin-left: 4px;
-  color: #103AAE;
+  color: #103aae;
 }
 
 .price__value::before {
   content: attr(data-price);
   position: absolute;
   font-size: 100px;
-  color: #E8E8E8;
+  color: #e8e8e8;
   z-index: -1;
   bottom: 25px;
   left: -22px;
@@ -1281,8 +1281,8 @@ iframe {
 .promo__text-wrap {
   width: 43%;
   padding: 84px 78px;
-  color: #FFFFFF;
-  background-color: #ED0233;
+  color: #ffffff;
+  background-color: #ed0233;
 }
 
 .promo__text-top {
@@ -1337,7 +1337,7 @@ iframe {
   align-items: center;
   width: 64px;
   padding-top: 4px;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #ffffff;
 }
 
 .promo__data-number {
@@ -1384,7 +1384,7 @@ iframe {
   font-size: 40px;
   line-height: 46px;
   font-weight: 700;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #ffffff;
 }
 
 .promo__text {
@@ -1433,7 +1433,6 @@ iframe {
   line-height: 49px;
   font-weight: 700;
   width: 1160px;
-  margin-left: 2px;
   margin: 0 auto;
   margin-bottom: 53px;
   letter-spacing: 0.03em;
@@ -1469,10 +1468,10 @@ iframe {
 }
 
 .coaches__button-prev {
-  left: 10px;
+  left: 0;
   right: auto;
   position: absolute;
-  top: 50%;
+  top: 44%;
   z-index: 9;
   cursor: pointer;
   display: -webkit-box;
@@ -1484,6 +1483,10 @@ iframe {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.coaches__button-prev:hover {
+  opacity: 0.4;
 }
 
 .coaches__button-prev::after {
@@ -1492,10 +1495,10 @@ iframe {
 }
 
 .coaches__button-next {
-  right: 10px;
+  right: 0;
   left: auto;
   position: absolute;
-  top: 50%;
+  top: 44%;
   z-index: 9;
   cursor: pointer;
   display: -webkit-box;
@@ -1507,6 +1510,10 @@ iframe {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.coaches__button-next:hover {
+  opacity: 0.4;
 }
 
 .coaches__button-next::after {
@@ -1547,12 +1554,12 @@ iframe {
   scrollbar-width: thin;
 }
 
-.coaches__item pictupe {
+.coaches__item picture {
   position: absolute;
   height: 294px;
 }
 
-.coaches__item pictupe img {
+.coaches__item picture img {
   width: 100%;
 }
 
@@ -1599,7 +1606,7 @@ iframe {
   padding-top: 54px;
   padding-bottom: 34px;
   min-height: 294px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .coaches__info::after {
@@ -1644,7 +1651,7 @@ iframe {
   line-height: 22px;
   font-weight: 400;
   margin-bottom: 33px;
-  color: #B6BDCC;
+  color: #b6bdcc;
 }
 
 .coaches__achievement-list {
@@ -1676,7 +1683,7 @@ iframe {
   left: -16px;
   width: 6px;
   height: 6px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50%;
 }
 
@@ -1700,7 +1707,7 @@ iframe {
 
 .advantages {
   min-height: 664px;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 }
 
 .advantages__container {
@@ -1898,8 +1905,8 @@ iframe {
   min-height: 307px;
   margin: -155px 0;
   padding: 54px 34px 30px;
-  color: #FFFFFF;
-  background-color: #1C3374;
+  color: #ffffff;
+  background-color: #1c3374;
 }
 
 .advantages__center-title {
@@ -1970,8 +1977,8 @@ iframe {
   position: relative;
   width: 280px;
   padding: 41px 45px;
-  color: #FFFFFF;
-  background-color: #ED0233;
+  color: #ffffff;
+  background-color: #ed0233;
   overflow-wrap: break-word;
 }
 
@@ -2006,11 +2013,11 @@ iframe {
   position: absolute;
   bottom: 46px;
   left: 45px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   overflow-wrap: break-word;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 }
 
 .promotions__image img {
@@ -2035,6 +2042,7 @@ iframe {
 .promotions__side-wrap {
   position: relative;
   z-index: 999;
+  height: 100%;
 }
 
 .promotions__side-top,
@@ -2043,7 +2051,7 @@ iframe {
   max-width: 560px;
   min-height: 211px;
   padding: 30px 35px;
-  color: #1C3374;
+  color: #1c3374;
 }
 
 .promotions__side-top::before,
@@ -2054,29 +2062,25 @@ iframe {
   left: 7px;
   bottom: 7px;
   right: 7px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   z-index: 1;
 }
 
 .promotions__side-top::after,
 .promotions__side-bottom::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   height: 100%;
   width: 100%;
-  background: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%);
-  background: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  background: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+  background: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
 }
 
 .promotions__side-top {
   margin-bottom: 40px;
-}
-
-.promotions__side-wrap {
-  height: 100%;
 }
 
 .promotions__side-title {
@@ -2103,9 +2107,10 @@ iframe {
   position: absolute;
   bottom: 5px;
   left: 0;
+  color: #1c3374;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border-bottom: 1px solid #1C3374;
+  border-bottom: 1px solid #1c3374;
   overflow-wrap: break-word;
 }
 
@@ -2137,8 +2142,10 @@ iframe {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 606px;
   min-width: 0;
+  max-width: 560px;
+  padding: 0;
+  height: 242px;
 }
 
 .reviews__list {
@@ -2226,13 +2233,10 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 560px;
   min-height: 242px;
-  padding-top: 62px;
-  padding-left: 62px;
   padding: 55px 62px 57px;
-  color: #FFFFFF;
-  background-color: #1C3374;
+  color: #ffffff;
+  background-color: #1c3374;
 }
 
 .reviews__item--hidden {
@@ -2242,11 +2246,9 @@ iframe {
 .reviews__item-next {
   width: 560px;
   min-height: 242px;
-  padding-top: 62px;
-  padding-left: 62px;
   padding: 55px 62px 57px;
-  color: #FFFFFF;
-  background-color: #1C3374;
+  color: #ffffff;
+  background-color: #1c3374;
 }
 
 .reviews__svg:hover path {
@@ -2255,7 +2257,7 @@ iframe {
 
 .reviews__item-image {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   margin-top: 8px;
   margin-right: 28px;
@@ -2284,9 +2286,9 @@ iframe {
 
 .section {
   min-height: 337px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #FFFFFF));
-  background: -o-linear-gradient(left, #102654 50%, #FFFFFF 50%);
-  background: linear-gradient(to right, #102654 50%, #FFFFFF 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff));
+  background: -o-linear-gradient(left, #102654 50%, #ffffff 50%);
+  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
 }
 
 .section__container {
@@ -2312,7 +2314,7 @@ iframe {
   line-height: 49px;
   font-weight: 700;
   margin-bottom: 35px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0.03em;
 }
 
@@ -2339,12 +2341,12 @@ iframe {
   -ms-flex-positive: 1;
   flex-grow: 1;
   padding: 10px 0 6px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
-  border-bottom: 1px solid #74819C;
+  border-bottom: 1px solid #74819c;
   background-color: transparent;
   outline: 0;
-  caret-color: #FFFFFF;
+  caret-color: #ffffff;
 }
 
 .free-lesson__input-wrap input:not(:last-of-type) {
@@ -2354,7 +2356,7 @@ iframe {
 .free-lesson__input-wrap input:hover,
 .free-lesson__input-wrap input:focus {
   outline: none;
-  border-color: #FFFFFF;
+  border-color: #ffffff;
 }
 
 .free-lesson__input-wrap input::-webkit-input-placeholder {
@@ -2362,7 +2364,7 @@ iframe {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .free-lesson__input-wrap input::-moz-placeholder {
@@ -2370,7 +2372,7 @@ iframe {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .free-lesson__input-wrap input:-ms-input-placeholder {
@@ -2378,7 +2380,7 @@ iframe {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .free-lesson__input-wrap input::-ms-input-placeholder {
@@ -2386,7 +2388,7 @@ iframe {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .free-lesson__input-wrap input::placeholder {
@@ -2394,7 +2396,7 @@ iframe {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .free-lesson__button {
@@ -2438,7 +2440,7 @@ iframe {
 .contacts__list--left {
   width: 231px;
   padding-right: 60px;
-  border-right: 1px solid #74819C;
+  border-right: 1px solid #74819c;
 }
 
 .contacts__list--right {
@@ -2477,7 +2479,7 @@ iframe {
   -ms-flex-align: center;
   align-items: center;
   min-height: 110px;
-  background-color: #030A1A;
+  background-color: #030a1a;
 }
 
 .footer__container {
@@ -2509,7 +2511,7 @@ iframe {
   flex-wrap: wrap;
   margin-top: 10px;
   margin-left: 60px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__nav-item {
@@ -2525,8 +2527,8 @@ iframe {
   line-height: 14px;
   font-weight: 400;
   margin-right: 40px;
-  color: #FFFFFF;
-  letter-spacing: 0.005em;
+  color: #ffffff;
+  letter-spacing: 0.01em;
 }
 
 .footer__socials-list {
@@ -2547,7 +2549,7 @@ iframe {
 }
 
 .footer__socials-item:not(:last-of-type) {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 /* Slider */
@@ -2580,14 +2582,12 @@ iframe {
 }
 
 .slick-list.dragging {
-  cursor: pointer;
   cursor: hand;
 }
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -2600,13 +2600,10 @@ iframe {
   margin-right: auto;
 }
 
-.slick-track:before,
-.slick-track:after {
+.slick-track::before,
+.slick-track::after {
   content: "";
   display: table;
-}
-
-.slick-track:after {
   clear: both;
 }
 
@@ -2671,8 +2668,6 @@ iframe {
   -ms-flex-align: start;
   align-items: flex-start;
 }
-
-/* coaches slider */
 
 .coaches__list {
   position: relative;
@@ -2740,6 +2735,12 @@ iframe {
   transform: rotate(180deg);
 }
 
+@media (min-width: 1199px) {
+  .section {
+    border-top: 1px solid #74819c;
+  }
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 1199px;
@@ -2753,7 +2754,7 @@ iframe {
 
   .header {
     min-height: 554px;
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .header__top {
@@ -2828,7 +2829,7 @@ iframe {
     width: 115px;
     margin-top: -80px;
     margin-left: -92px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: right;
   }
 
@@ -2905,8 +2906,8 @@ iframe {
     top: 57px;
     left: 106px;
     border-radius: 50%;
-    background: -o-linear-gradient(45.11deg, #003D85 25.38%, #B80027 74.89%);
-    background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+    background: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%);
+    background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   }
 
   .gym__video-btn::before {
@@ -2916,7 +2917,7 @@ iframe {
     left: -10px;
     width: 72px;
     height: 73px;
-    background-image: url(../img/video-ellipse.png);
+    background-image: url("../img/video-ellipse.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -3112,7 +3113,7 @@ iframe {
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
-    border-top: 1px solid #FFFFFF;
+    border-top: 1px solid #ffffff;
   }
 
   .promo__text {
@@ -3154,7 +3155,6 @@ iframe {
   }
 
   .coaches__container {
-    padding-top: 40px;
     padding: 40px 45px 100px;
   }
 
@@ -3187,11 +3187,11 @@ iframe {
     margin-right: 50px;
   }
 
-  .coaches__item pictupe {
+  .coaches__item picture {
     min-width: 260px;
   }
 
-  .coaches__item pictupe img {
+  .coaches__item picture img {
     min-width: 260px;
   }
 
@@ -3472,16 +3472,19 @@ iframe {
 
   .promotions__side-link {
     bottom: 16px;
+    color: #1c3374;
   }
 
   .reviews {
     min-height: 465px;
     padding-top: 48px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 
   .reviews__container {
-    width: 560px;
+    max-width: 566px;
+    padding: 0;
+    min-width: 0;
   }
 
   .reviews__title {
@@ -3508,7 +3511,7 @@ iframe {
 
   .section {
     min-height: 337px;
-    background: #FFFFFF;
+    background: #ffffff;
   }
 
   .section__container {
@@ -3548,17 +3551,6 @@ iframe {
     line-height: 42px;
     font-weight: 700;
     margin-bottom: 29px;
-  }
-
-  .free-lesson form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
   }
 
   .free-lesson__input-wrap input:not(:last-of-type) {
@@ -3678,7 +3670,7 @@ iframe {
 
   .header {
     min-height: 491px;
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .header__top {
@@ -3815,7 +3807,7 @@ iframe {
     left: -14px;
     width: 100px;
     height: 100px;
-    background-image: url(../img/video-ellipse.png);
+    background-image: url("../img/video-ellipse.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -3961,8 +3953,6 @@ iframe {
 
   .coaches__container {
     min-height: 378px;
-    padding-top: 35px;
-    padding-bottom: 70px;
     padding: 34px 14px 40px;
   }
 
@@ -3998,12 +3988,12 @@ iframe {
     max-height: 274px;
   }
 
-  .coaches__item pictupe {
+  .coaches__item picture {
     max-width: 226px;
     max-height: 274px;
   }
 
-  .coaches__item pictupe img {
+  .coaches__item picture img {
     max-width: 226px;
     max-height: 274px;
   }
@@ -4469,17 +4459,17 @@ iframe {
     margin-right: 35px;
   }
 
-  .footer__socials-link[aria-label=Вконтакте] svg {
+  .footer__socials-link[aria-label="Вконтакте"] svg {
     width: 25px;
     height: 25px;
   }
 
-  .footer__socials-link[aria-label=Instagram] svg {
+  .footer__socials-link[aria-label="Instagram"] svg {
     width: 25px;
     height: 25px;
   }
 
-  .footer__socials-link[aria-label=Facebook] svg {
+  .footer__socials-link[aria-label="Facebook"] svg {
     width: 25px;
     height: 25px;
   }
