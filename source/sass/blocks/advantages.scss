@@ -19,6 +19,22 @@
   letter-spacing: 0.03em;
 }
 
+.advantages__span-num {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 150%;
+  background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -text-fill-color: transparent;
+
+  @media (max-width: $tablet-max) {
+    font-size: 58px;
+  }
+}
+
 .advantages__top {
   display: flex;
   justify-content: space-between;

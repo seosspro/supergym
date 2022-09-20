@@ -2,30 +2,28 @@ import IMask from 'imask';
 import Swiper from 'swiper/swiper-bundle';
 
 // переключатель тарифов
-window.addEventListener('load', () => {
-  const tubs = document.querySelectorAll('.sub__month-link');
-  const lists = document.querySelectorAll('.sub__list');
+const subMonth = document.querySelectorAll('.sub__month-link');
+const subList = document.querySelectorAll('.sub__list');
 
-  function changeLists(tubs, lists, jsClass, cssClass) {
-    tubs.forEach((tub, i) => {
-      tub.addEventListener('click', (evt) => {
-        evt.preventDefault();
-        tubs.forEach((el) => {
-          el.classList.remove(cssClass);
-        });
-        tub.classList.add(cssClass);
-        lists.forEach((list) => {
-          list.classList.add(jsClass);
-        });
-        lists[i].classList.remove(jsClass);
+function changeLists(tubs, lists, jsClass, cssClass) {
+  tubs.forEach((tub, i) => {
+    tub.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      tubs.forEach((el) => {
+        el.classList.remove(cssClass);
       });
+      tub.classList.add(cssClass);
+      lists.forEach((list) => {
+        list.classList.add(jsClass);
+      });
+      lists[i].classList.remove(jsClass);
     });
-  }
+  });
+}
 
-  if (tubs) {
-    changeLists(tubs, lists, 'sub__list-hidden', 'sub__month-link--active');
-  }
-});
+if (subMonth) {
+  changeLists(subMonth, subList, 'sub__list-hidden', 'sub__month-link--active');
+}
 
 // маска телефона
 
@@ -73,7 +71,7 @@ function findVideos() {
   let videos = document.querySelectorAll('.gym__video');
 
   for (let i = 0; i < videos.length; i++) {
-      setupVideo(videos[i]);
+    setupVideo(videos[i]);
   }
 }
 
@@ -84,11 +82,11 @@ function setupVideo(video) {
   let id = parseMediaURL(media);
 
   video.addEventListener('click', () => {
-      let iframe = createIframe(id);
+    let iframe = createIframe(id);
 
-      link.remove();
-      button.remove();
-      video.appendChild(iframe);
+    link.remove();
+    button.remove();
+    video.appendChild(iframe);
   });
 
   link.removeAttribute('href');
@@ -96,7 +94,8 @@ function setupVideo(video) {
 }
 
 function parseMediaURL(media) {
-  let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+  let regexp =
+    /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
   let url = media.src;
   let match = url.match(regexp);
 

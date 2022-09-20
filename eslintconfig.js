@@ -63,7 +63,7 @@ module.exports = {
     'no-labels': 'error',
     'no-lone-blocks': 'error',
     'no-global-assign': 'error',
-    'no-new': 'error',
+    'no-new': 0,
     'no-new-func': 'error',
     'no-octal': 'error', // default
     'no-octal-escape': 'error',

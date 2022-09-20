@@ -1,11 +1,12 @@
 root: true
 
+parserOptions:
+  ecmaVersion: 2015
+  sourceType: 'module'
+
 env:
+  es6: true
   browser: true
+  commonjs: true
 
-extends:
-  "htmlacademy/es5"
-
-  {
-    "extends": ["@salesforce/eslint-config-lwc/recommended"]
-}
+extends: "./eslintconfig.js"

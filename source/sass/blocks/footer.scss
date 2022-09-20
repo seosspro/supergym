@@ -162,21 +162,4 @@
       margin-right: 0;
     }
   }
-
-  .footer__socials-link {
-    &[aria-label="Вконтакте"] svg {
-      width: 25px;
-      height: 25px;
-    }
-
-    &[aria-label="Instagram"] svg {
-      width: 25px;
-      height: 25px;
-    }
-
-    &[aria-label="Facebook"] svg {
-      width: 25px;
-      height: 25px;
-    }
-  }
 }
