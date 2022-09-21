@@ -37,14 +37,14 @@ for (let i = 0; i < elements.length; i++) {
 
 // слайдер отзывов
 
-const swiper = new Swiper('.swiper', {
+new Swiper('.swiper', {
   navigation: {
     nextEl: '.reviews__button-next',
     prevEl: '.reviews__button-prev',
   },
 });
 
-const coachesSwiper = new Swiper('.mySwiper', {
+new Swiper('.mySwiper', {
   slidesPerView: 1,
   spaceBetween: 40,
   navigation: {
@@ -113,7 +113,7 @@ function createIframe(id) {
   return iframe;
 }
 
-function generateURL(id) {
+function generateURL() {
   let query = '?rel=0&showinfo=0&autoplay=1';
 
   return 'https://www.youtube.com/embed/9TZXsZItgdw' + query;
