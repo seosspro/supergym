@@ -58,11 +58,11 @@ new Swiper('.mySwiper', {
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 48,
+      spaceBetween: 38,
     },
     1200: {
       slidesPerView: 4,
-      spaceBetween: 44,
+      spaceBetween: 44.5,
     },
   },
 });
