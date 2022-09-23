@@ -1687,7 +1687,6 @@ a {
   justify-content: center;
   max-width: 1270px;
   margin: 0 auto;
-  padding: 0 56px;
 }
 
 .coaches__list {
@@ -1809,14 +1808,6 @@ a {
 
 .coaches__item::-webkit-scrollbar {
   width: 1px;
-}
-
-.coaches__item::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-.coaches__item::-webkit-scrollbar-thumb {
-  background-color: #aeb7c8;
 }
 
 .coaches__item-wrap {
@@ -3748,6 +3739,16 @@ a {
   }
 }
 
+@media (max-width: 1199px) and (max-width: 767px) {
+  .coaches__item picture {
+    min-width: 226px;
+  }
+
+  .coaches__item picture img {
+    min-width: 226px;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     max-width: 767px;
@@ -4043,13 +4044,11 @@ a {
   }
 
   .coaches__button-prev::after {
-    width: 10px;
-    height: 19px;
+    content: url("../../img/arrow-left-mobile.svg");
   }
 
   .coaches__button-next::after {
-    width: 10px;
-    height: 19px;
+    content: url("../../img/arrow-right-mobile.svg");
   }
 
   .coaches__container {
@@ -4075,7 +4074,7 @@ a {
   .coaches__list {
     min-width: 226px;
     height: 274px;
-    margin-left: 0;
+    margin-left: 15px;
   }
 
   .coaches__item-wrap {
@@ -4531,7 +4530,7 @@ a {
   .footer__nav-item {
     max-width: 86px;
     margin-top: 23px;
-    margin-right: 60px;
+    margin-right: 57px;
     margin-bottom: 0;
   }
 
