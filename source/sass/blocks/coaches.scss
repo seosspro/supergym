@@ -104,7 +104,6 @@
   max-width: 260px;
   min-height: 294px;
   margin-right: 40px;
-  overflow-y: scroll;
 
   picture {
     position: absolute;
@@ -269,14 +268,14 @@
     picture {
       min-width: 260px;
 
-      @media(max-width:$mobile-max){
+      @media (max-width: $mobile-max) {
         min-width: 226px;
       }
 
       img {
         min-width: 260px;
 
-        @media(max-width:$mobile-max){
+        @media (max-width: $mobile-max) {
           min-width: 226px;
         }
       }
@@ -323,7 +322,7 @@
   .coaches__item-wrap {
     position: absolute;
     z-index: 2;
-
+    min-height: unset;
     min-width: 226px;
   }
 

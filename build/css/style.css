@@ -1785,7 +1785,6 @@ a {
   max-width: 260px;
   min-height: 294px;
   margin-right: 40px;
-  overflow-y: scroll;
 }
 
 .coaches__item picture {
@@ -4080,6 +4079,7 @@ a {
   .coaches__item-wrap {
     position: absolute;
     z-index: 2;
+    min-height: unset;
     min-width: 226px;
   }
 
