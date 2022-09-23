@@ -62,7 +62,7 @@ new Swiper('.mySwiper', {
     },
     1200: {
       slidesPerView: 4,
-      spaceBetween: 60,
+      spaceBetween: 40,
     },
   },
 });

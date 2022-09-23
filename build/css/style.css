@@ -1786,10 +1786,7 @@ a {
   max-width: 260px;
   min-height: 294px;
   margin-right: 40px;
-  overflow-x: hidden;
   overflow-y: scroll;
-  scrollbar-color: transparent transparent;
-  scrollbar-width: thin;
 }
 
 .coaches__item picture {
@@ -2032,6 +2029,10 @@ a {
   padding-top: 66px;
 }
 
+.advantages__number-metrics {
+  margin-top: -10px;
+}
+
 .advantages__number {
   margin-right: 30px;
 }
@@ -2039,7 +2040,7 @@ a {
 .advantages__number--space {
   width: 108px;
   margin-left: 26px;
-  padding-bottom: 20px;
+  margin-top: -20px;
 }
 
 .advantages__number--space .advantages__number-value {
@@ -2054,6 +2055,8 @@ a {
 
 .advantages__number--parking {
   width: 72px;
+  margin-top: -15px;
+  margin-left: -5px;
 }
 
 .advantages__number--parking .advantages__number-value {
@@ -2062,9 +2065,14 @@ a {
   margin: 9px 0 6px 2px;
 }
 
+.advantages__number--parking .advantages__number-metrics {
+  margin-top: -15px;
+}
+
 .advantages__number--comfort {
   width: 107px;
   margin-left: 20px;
+  margin-top: -20px;
 }
 
 .advantages__number--comfort .advantages__number-value {
@@ -2080,6 +2088,7 @@ a {
 .advantages__number--experience {
   width: 70px;
   margin-right: 33px;
+  margin-top: -20px;
 }
 
 .advantages__number--experience .advantages__number-value {
@@ -2185,8 +2194,8 @@ a {
 
 .promotions {
   min-height: 740px;
-  padding-top: 85px;
-  padding-bottom: 60px;
+  padding-top: 110px;
+  padding-bottom: 97px;
 }
 
 .promotions__title {
@@ -2394,7 +2403,7 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
-  max-width: 560px;
+  max-width: 640px;
   padding: 0;
   height: 242px;
 }
@@ -2414,19 +2423,22 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 242px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #ffffff;
+  background-color: #1c3374;
 }
 
 .reviews__button-prev {
-  left: 10px;
+  left: 0;
   right: auto;
   position: absolute;
-  top: 50%;
+  top: 43%;
   z-index: 9;
   cursor: pointer;
   display: -webkit-box;
@@ -2446,10 +2458,10 @@ a {
 }
 
 .reviews__button-next {
-  right: 10px;
+  right: 0;
   left: auto;
   position: absolute;
-  top: 50%;
+  top: 43%;
   z-index: 9;
   cursor: pointer;
   display: -webkit-box;
@@ -2481,13 +2493,7 @@ a {
 }
 
 .reviews__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 242px;
-  padding: 55px 62px 57px;
-  color: #ffffff;
-  background-color: #1c3374;
+  padding: 0 40px;
 }
 
 .reviews__item--hidden {
@@ -2508,8 +2514,8 @@ a {
 
 .reviews__item-image {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 55px;
+  left: 60px;
   margin-top: 8px;
   margin-right: 28px;
 }
@@ -2743,11 +2749,12 @@ a {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 37px 20px 27px;
+  padding: 37px 10px 27px;
 }
 
 .footer__logo {
-  margin-top: 8px;
+  margin-top: 5px;
+  margin-left: 10px;
   margin-right: 80px;
 }
 
@@ -2794,13 +2801,12 @@ a {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-top: 2px;
   min-width: 110px;
-  margin-top: 6px;
   margin-left: 80px;
-}
-
-.footer__socials-item:not(:last-of-type) {
-  margin-right: 20px;
+  -webkit-column-gap: 11px;
+  -moz-column-gap: 11px;
+  column-gap: 11px;
 }
 
 .body__wrapper {
@@ -3567,11 +3573,11 @@ a {
   .reviews {
     min-height: 465px;
     padding-top: 48px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 
   .reviews__container {
-    max-width: 566px;
+    max-width: 650px;
     padding: 0;
     min-width: 0;
   }
@@ -3586,11 +3592,11 @@ a {
 
   .reviews__item {
     width: 566px;
-    padding: 54px 65px 56px;
   }
 
   .reviews__item-image {
-    top: 0;
+    top: 55px;
+    left: 65px;
   }
 
   .reviews__button-list {
@@ -3642,6 +3648,10 @@ a {
     margin-bottom: 29px;
   }
 
+  .free-lesson__input-wrap {
+    margin-bottom: 25px;
+  }
+
   .free-lesson__input-wrap input:not(:last-of-type) {
     margin-right: 60px;
   }
@@ -3653,8 +3663,9 @@ a {
   .contacts__container {
     width: 510px;
     margin: 0 auto;
-    padding: 68px 0;
+    padding: 60px 0;
     padding-bottom: 61px;
+    padding-top: 65px;
   }
 
   .contacts__title {
@@ -3697,7 +3708,7 @@ a {
   }
 
   .footer__container {
-    padding: 40px 44px 27px;
+    padding: 40px 36px 27px;
   }
 
   .footer__logo {
@@ -3728,11 +3739,12 @@ a {
 
   .footer__socials-list {
     min-width: 100px;
-    margin-left: 32px;
+    margin-left: 40px;
+    margin-top: 5px;
   }
 
-  .footer__socials-item:not(:last-of-type) {
-    margin-right: 20px;
+  .body__wrapper {
+    min-height: auto;
   }
 }
 
@@ -3863,29 +3875,34 @@ a {
     left: 0;
   }
 
-  .gym__video::before {
+  .gym__video-link::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 99%;
+    height: 100%;
     background-color: rgba(20, 54, 122, 0.5);
     z-index: 1;
   }
 
   .gym__video-btn {
-    width: 72px;
-    height: 72px;
-    left: 128px;
-    top: 54px;
+    position: absolute;
+    z-index: 2;
+    width: 52px;
+    height: 52px;
+    top: 57px;
+    left: 136px;
+    border-radius: 50%;
+    background: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%);
+    background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   }
 
   .gym__video-btn::before {
     content: "";
     position: absolute;
-    top: -14px;
-    left: -14px;
-    width: 100px;
-    height: 100px;
+    top: -10px;
+    left: -10px;
+    width: 72px;
+    height: 73px;
     background-image: url("../img/video-ellipse.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -3894,8 +3911,8 @@ a {
 
   .gym__video-icon {
     position: absolute;
-    left: 32px;
-    top: 30px;
+    left: 23px;
+    top: 20px;
   }
 
   .sub__month-list {
@@ -4018,6 +4035,11 @@ a {
 
   .promo-img {
     width: 100%;
+  }
+
+  .promo__button {
+    padding: 0;
+    padding-top: 12px;
   }
 
   .coaches__button-prev::after {
@@ -4164,8 +4186,8 @@ a {
   .advantages__number--space {
     width: 90px;
     margin-left: 0;
-    margin-bottom: 10px;
     padding-bottom: 0;
+    margin-top: -10px;
   }
 
   .advantages__number--space .advantages__number-metrics {
@@ -4180,7 +4202,7 @@ a {
   .advantages__number--comfort {
     width: 90px;
     margin-left: 0;
-    margin-bottom: 8px;
+    margin-top: -10px;
   }
 
   .advantages__number--comfort .advantages__number-metrics {
@@ -4190,7 +4212,7 @@ a {
   .advantages__number--experience {
     width: 60px;
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-top: -10px;
   }
 
   .advantages__desc {
@@ -4220,8 +4242,8 @@ a {
   }
 
   .promotions {
-    padding-top: 68px;
-    padding-bottom: 35px;
+    padding-top: 72px;
+    padding-bottom: 30px;
   }
 
   .promotions__title {
@@ -4317,14 +4339,22 @@ a {
     margin-left: -34px;
   }
 
+  .reviews__button-prev {
+    top: 48%;
+    left: 12px;
+  }
+
   .reviews__button-prev::after {
-    width: 10px;
-    height: 19px;
+    content: url("../../img/arrow-left-mobile.svg");
+  }
+
+  .reviews__button-next {
+    top: 48%;
+    right: 12px;
   }
 
   .reviews__button-next::after {
-    width: 10px;
-    height: 19px;
+    content: url("../../img/arrow-right-mobile.svg");
   }
 
   .reviews {
@@ -4335,6 +4365,9 @@ a {
 
   .reviews__container {
     width: 320px;
+    padding: 0 10px;
+    padding-top: 5px;
+    height: 340px;
   }
 
   .reviews__title {
@@ -4350,13 +4383,14 @@ a {
   }
 
   .reviews__item-container {
-    width: 176px;
+    width: 225px;
+    padding-bottom: 140px;
+    padding-top: 48px;
   }
 
   .reviews__item {
     width: 226px;
     min-height: 225px;
-    padding: 47px 25px 36px;
   }
 
   .reviews__item-wrap {
@@ -4364,8 +4398,8 @@ a {
   }
 
   .reviews__item-image {
-    top: -14px;
-    left: 16px;
+    top: 34px;
+    left: 35px;
     width: 68px;
     height: 68px;
   }
@@ -4406,7 +4440,7 @@ a {
 
   .free-lesson__container {
     width: 320px;
-    padding: 68px 15px;
+    padding: 66px 15px;
   }
 
   .free-lesson__title {
@@ -4437,7 +4471,7 @@ a {
     width: 320px;
     margin: 0 auto;
     padding: 68px 11px;
-    padding-bottom: 43px;
+    padding-bottom: 40px;
   }
 
   .contacts__title {
@@ -4520,7 +4554,7 @@ a {
 
   .footer__logo {
     position: absolute;
-    left: 14px;
+    left: 5px;
     top: 43px;
   }
 

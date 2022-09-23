@@ -88,6 +88,7 @@
   }
 
   .free-lesson__input-wrap {
+    margin-bottom: 25px;
     input {
       &:not(:last-of-type) {
         margin-right: 60px;
@@ -99,7 +100,7 @@
 @media (max-width: $mobile-max) {
   .free-lesson__container {
     width: 320px;
-    padding: 68px 15px;
+    padding: 66px 15px;
   }
 
   .free-lesson__title {

@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-  max-width: 560px;
+  max-width: 640px;
   padding: 0;
   height: 242px;
 }
@@ -38,52 +38,64 @@
 
 .reviews__item-container {
   position: relative;
-
   display: flex;
+  min-height: 242px;
   justify-content: center;
   align-items: center;
+
+  color: $white;
+
+  background-color: $review-item;
 }
 
 .reviews__button-prev {
-  left: 10px;
+  left: 0;
   right: auto;
   position: absolute;
-  top: 50%;
+  top: 43%;
   z-index: 9;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: $mobile-max) {
+    top: 48%;
+    left: 12px;
+  }
 
   &::after {
     position: relative;
     content: url("../../img/arrow-left.svg");
 
     @media (max-width: $mobile-max) {
-      width: 10px;
-      height: 19px;
+      content: url("../../img/arrow-left-mobile.svg");
     }
   }
 }
 
 .reviews__button-next {
-  right: 10px;
+  right: 0;
   left: auto;
   position: absolute;
-  top: 50%;
+  top: 43%;
   z-index: 9;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  @media (max-width: $mobile-max) {
+    top: 48%;
+    right: 12px;
+  }
+
   &::after {
     position: relative;
     content: url("../../img/arrow-right.svg");
 
     @media (max-width: $mobile-max) {
-      width: 10px;
-      height: 19px;
+      content: url("../../img/arrow-right-mobile.svg");
     }
   }
 }
@@ -101,13 +113,7 @@
 }
 
 .reviews__item {
-  display: flex;
-  min-height: 242px;
-  padding: 55px 62px 57px;
-
-  color: $white;
-
-  background-color: $review-item;
+  padding: 0 40px;
 }
 
 .reviews__item--hidden {
@@ -130,8 +136,8 @@
 
 .reviews__item-image {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 55px;
+  left: 60px;
   margin-top: 8px;
   margin-right: 28px;
 }
@@ -157,11 +163,11 @@
   .reviews {
     min-height: 465px;
     padding-top: 48px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 
   .reviews__container {
-    max-width: 566px;
+    max-width: 650px;
     padding: 0;
     min-width: 0;
   }
@@ -174,11 +180,11 @@
 
   .reviews__item {
     width: 566px;
-    padding: 54px 65px 56px;
   }
 
   .reviews__item-image {
-    top: 0;
+    top: 55px;
+    left: 65px;
   }
 
   .reviews__button-list {
@@ -197,6 +203,9 @@
 
   .reviews__container {
     width: 320px;
+    padding: 0 10px;
+    padding-top: 5px;
+    height: 340px;
   }
 
   .reviews__title {
@@ -210,14 +219,14 @@
   }
 
   .reviews__item-container {
-    width: 176px;
+    width: 225px;
+    padding-bottom: 140px;
+    padding-top: 48px;
   }
 
   .reviews__item {
     width: 226px;
     min-height: 225px;
-
-    padding: 47px 25px 36px;
   }
 
   .reviews__item-wrap {
@@ -225,8 +234,8 @@
   }
 
   .reviews__item-image {
-    top: -14px;
-    left: 16px;
+    top: 34px;
+    left: 35px;
 
     width: 68px;
     height: 68px;
