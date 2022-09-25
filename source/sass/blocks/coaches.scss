@@ -1,6 +1,7 @@
 .coaches__container {
   padding-bottom: 120px;
   position: relative;
+  max-width: unset;
 }
 
 .coaches__title {
@@ -13,8 +14,6 @@
 }
 
 .coaches__lists-container {
-  position: relative;
-
   display: flex;
   justify-content: center;
   max-width: 1270px;
@@ -32,7 +31,7 @@
 .coaches__button-prev {
   top: 31%;
   right: auto;
-  left: -40px;
+  left: auto;
   position: absolute;
   z-index: 9;
   cursor: pointer;
@@ -55,7 +54,7 @@
 }
 
 .coaches__button-next {
-  right: -40px;
+  right: 0;
   left: auto;
   top: 31%;
   position: absolute;
@@ -244,7 +243,7 @@
   }
 
   .coaches__list {
-    margin-left: 38px;
+    margin-left: 0;
   }
 
   .coaches__item-wrap {
@@ -270,10 +269,6 @@
         }
       }
     }
-  }
-
-  .coaches__item:not(:nth-of-type(2n)) {
-    margin-right: -40px;
   }
 
   .coaches__button-list {
