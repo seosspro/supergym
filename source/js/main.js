@@ -37,12 +37,14 @@ for (let i = 0; i < elements.length; i++) {
 
 // слайдер отзывов
 
-new Swiper('.swiper', {
+new Swiper('.js-swiper', {
   navigation: {
     nextEl: '.reviews__button-next',
     prevEl: '.reviews__button-prev',
   },
 });
+
+// слайдер тренеров
 
 new Swiper('.mySwiper', {
   slidesPerView: 1,
@@ -58,7 +60,7 @@ new Swiper('.mySwiper', {
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 38,
+      spaceBetween: 0,
     },
     1200: {
       slidesPerView: 4,

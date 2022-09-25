@@ -1660,9 +1660,8 @@ a {
 }
 
 .coaches__container {
-  max-width: 1272px;
-  padding: 0;
   padding-bottom: 120px;
+  position: relative;
 }
 
 .coaches__title {
@@ -1693,7 +1692,6 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1705,10 +1703,10 @@ a {
 }
 
 .coaches__button-prev {
-  left: 0;
+  top: 31%;
   right: auto;
+  left: -40px;
   position: absolute;
-  top: 44%;
   z-index: 9;
   cursor: pointer;
   display: -webkit-box;
@@ -1732,10 +1730,10 @@ a {
 }
 
 .coaches__button-next {
-  right: 0;
+  right: -40px;
   left: auto;
+  top: 31%;
   position: absolute;
-  top: 44%;
   z-index: 9;
   cursor: pointer;
   display: -webkit-box;
@@ -1928,6 +1926,16 @@ a {
   width: 100%;
   height: 38px;
   margin-top: -18px;
+}
+
+.coaches__button-next {
+  right: 42px;
+  top: 39%;
+}
+
+.coaches__button-prev {
+  left: 42px;
+  top: 39%;
 }
 
 .advantages {
@@ -3250,34 +3258,29 @@ a {
     text-align: center;
   }
 
-  .coaches__lists-container {
-    max-width: 678px;
-  }
-
   .coaches__list {
-    max-width: 596px;
-    margin-left: 42px;
+    margin-left: 38px;
   }
 
   .coaches__item-wrap {
-    min-width: 260px;
+    min-width: 268px;
   }
 
   .coaches__item {
-    min-width: 268px;
-    margin-right: 50px;
+    margin-right: 0;
+    max-width: unset;
   }
 
   .coaches__item picture {
-    min-width: 260px;
+    min-width: 268px;
   }
 
   .coaches__item picture img {
-    min-width: 260px;
+    min-width: 268px;
   }
 
   .coaches__item:not(:nth-of-type(2n)) {
-    margin-right: 34px;
+    margin-right: -40px;
   }
 
   .coaches__button-list {
