@@ -1,7 +1,6 @@
 .coaches__container {
   padding-bottom: 120px;
   position: relative;
-  max-width: unset;
 }
 
 .coaches__title {
@@ -31,7 +30,7 @@
 .coaches__button-prev {
   top: 31%;
   right: auto;
-  left: auto;
+  left: -40px;
   position: absolute;
   z-index: 9;
   cursor: pointer;
@@ -54,7 +53,7 @@
 }
 
 .coaches__button-next {
-  right: 0;
+  right: -40px;
   left: auto;
   top: 31%;
   position: absolute;
@@ -234,6 +233,16 @@
     padding: 40px 45px 100px;
   }
 
+  .coaches__button-next {
+    right: 42px;
+    top: 39%;
+  }
+
+  .coaches__button-prev {
+    left: 42px;
+    top: 39%;
+  }
+
   .coaches__title {
     @include font($bebas-neue, 42px, 42px, 700);
     width: 678px;
@@ -243,7 +252,7 @@
   }
 
   .coaches__list {
-    margin-left: 0;
+    margin-right: 0;
   }
 
   .coaches__item-wrap {
@@ -252,6 +261,7 @@
 
   .coaches__item {
     margin-right: 0;
+    margin-left: 0;
     max-width: unset;
 
     picture {
@@ -277,16 +287,6 @@
 
     width: 100%;
   }
-}
-
-.coaches__button-next {
-  right: 42px;
-  top: 39%;
-}
-
-.coaches__button-prev {
-  left: 42px;
-  top: 39%;
 }
 
 @media (max-width: $mobile-max) {

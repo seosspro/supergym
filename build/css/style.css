@@ -1662,7 +1662,6 @@ a {
 .coaches__container {
   padding-bottom: 120px;
   position: relative;
-  max-width: unset;
 }
 
 .coaches__title {
@@ -1705,7 +1704,7 @@ a {
 .coaches__button-prev {
   top: 31%;
   right: auto;
-  left: auto;
+  left: -40px;
   position: absolute;
   z-index: 9;
   cursor: pointer;
@@ -1730,7 +1729,7 @@ a {
 }
 
 .coaches__button-next {
-  right: 0;
+  right: -40px;
   left: auto;
   top: 31%;
   position: absolute;
@@ -1926,16 +1925,6 @@ a {
   width: 100%;
   height: 38px;
   margin-top: -18px;
-}
-
-.coaches__button-next {
-  right: 42px;
-  top: 39%;
-}
-
-.coaches__button-prev {
-  left: 42px;
-  top: 39%;
 }
 
 .advantages {
@@ -3247,6 +3236,16 @@ a {
     padding: 40px 45px 100px;
   }
 
+  .coaches__button-next {
+    right: 42px;
+    top: 39%;
+  }
+
+  .coaches__button-prev {
+    left: 42px;
+    top: 39%;
+  }
+
   .coaches__title {
     font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 42px;
@@ -3259,7 +3258,7 @@ a {
   }
 
   .coaches__list {
-    margin-left: 0;
+    margin-right: 0;
   }
 
   .coaches__item-wrap {
@@ -3268,6 +3267,7 @@ a {
 
   .coaches__item {
     margin-right: 0;
+    margin-left: 0;
     max-width: unset;
   }
 
