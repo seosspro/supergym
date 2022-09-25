@@ -4093,15 +4093,15 @@ a {
   }
 
   .coaches__item {
-    max-height: 274px;
+    height: 274px;
   }
 
   .coaches__item picture {
-    max-height: 274px;
+    height: 274px;
   }
 
   .coaches__item picture img {
-    max-height: 274px;
+    height: 274px;
     max-width: 226px;
   }
 
