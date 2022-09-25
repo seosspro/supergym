@@ -4076,7 +4076,7 @@ a {
   .coaches__list {
     min-width: 226px;
     height: 274px;
-    margin-left: 15px;
+    margin-left: 0;
   }
 
   .coaches__item-wrap {
@@ -4087,18 +4087,16 @@ a {
   }
 
   .coaches__item {
-    max-width: 226px;
     max-height: 274px;
   }
 
   .coaches__item picture {
-    max-width: 226px;
     max-height: 274px;
   }
 
   .coaches__item picture img {
-    max-width: 226px;
     max-height: 274px;
+    max-width: 226px;
   }
 
   .coaches__item:not(:nth-of-type(2n)) {

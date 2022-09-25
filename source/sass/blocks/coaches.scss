@@ -316,7 +316,7 @@
   .coaches__list {
     min-width: 226px;
     height: 274px;
-    margin-left: 15px;
+    margin-left: 0;
   }
 
   .coaches__item-wrap {
@@ -327,16 +327,14 @@
   }
 
   .coaches__item {
-    max-width: 226px;
     max-height: 274px;
 
     picture {
-      max-width: 226px;
       max-height: 274px;
 
       img {
-        max-width: 226px;
         max-height: 274px;
+        max-width: 226px;
       }
     }
   }
