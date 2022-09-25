@@ -17,8 +17,11 @@
   overflow-wrap: break-word;
 }
 
-.reviews__container {
+.reviews__container-wrapper {
   position: relative;
+}
+
+.reviews__container {
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -30,9 +33,7 @@
 .reviews__list {
   @include list-reset;
   box-sizing: border-box;
-
   position: relative;
-
   width: 566px;
 }
 
@@ -49,19 +50,18 @@
 }
 
 .reviews__button-prev {
-  left: 0;
-  right: auto;
-  position: absolute;
   top: 43%;
+  right: 62%;
+  left: 90px;
+  position: absolute;
   z-index: 9;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media (max-width: $mobile-max) {
-    top: 48%;
-    left: 12px;
+  &:hover {
+    opacity: 0.4;
   }
 
   &::after {
@@ -75,19 +75,18 @@
 }
 
 .reviews__button-next {
-  right: 0;
-  left: auto;
-  position: absolute;
+  right: 90px;
+  left: 62%;
   top: 43%;
+  position: absolute;
   z-index: 9;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media (max-width: $mobile-max) {
-    top: 48%;
-    right: 12px;
+  &:hover {
+    opacity: 0.4;
   }
 
   &::after {
@@ -166,10 +165,24 @@
     padding-bottom: 100px;
   }
 
+  .reviews__container-wrapper {
+    max-width: 700px;
+  }
+
   .reviews__container {
     max-width: 650px;
     padding: 0;
     min-width: 0;
+  }
+
+  .reviews__button-next {
+    left: 86%;
+    right: 0;
+  }
+
+  .reviews__button-prev {
+    right: 86%;
+    left: 0;
   }
 
   .reviews__title {
@@ -186,12 +199,6 @@
     top: 55px;
     left: 65px;
   }
-
-  .reviews__button-list {
-    top: 43%;
-
-    width: 680px;
-  }
 }
 
 @media (max-width: $mobile-max) {
@@ -199,6 +206,18 @@
     min-height: 465px;
     padding-top: 34px;
     padding-bottom: 70px;
+  }
+
+  .reviews__button-next {
+    top: 48%;
+  }
+
+  .reviews__button-prev {
+    top: 48%;
+  }
+
+  .reviews__container-wrapper {
+    max-width: 320px;
   }
 
   .reviews__container {
@@ -226,6 +245,7 @@
 
   .reviews__item {
     width: 226px;
+    padding: 0 20px;
     min-height: 225px;
   }
 
