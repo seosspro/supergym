@@ -313,6 +313,16 @@
     max-width: 292px;
   }
 
+  .coaches__button-next {
+    right: 12px;
+    top: 43%;
+  }
+
+  .coaches__button-prev {
+    left: 12px;
+    top: 43%;
+  }
+
   .coaches__list {
     min-width: 226px;
     height: 274px;
@@ -340,12 +350,13 @@
   }
 
   .coaches__item:not(:nth-of-type(2n)) {
-    margin-right: 30px;
+    margin-right: 0;
   }
 
   .coaches__info {
     max-width: 226px;
     padding-top: 46px;
+    min-height: 0;
   }
 
   .coaches__achievement-list {
