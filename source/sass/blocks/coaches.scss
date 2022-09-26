@@ -230,7 +230,7 @@
 
 @media (max-width: $tablet-max) {
   .coaches__container {
-    padding: 40px 45px 100px;
+    padding: 40px 80px 100px;
   }
 
   .coaches__button-next {
@@ -352,6 +352,10 @@
     max-width: 226px;
     padding-top: 46px;
     min-height: 0;
+
+    &--m {
+      margin-left: 16px;
+    }
   }
 
   .coaches__achievement-list {

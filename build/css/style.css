@@ -3244,7 +3244,7 @@ a {
   }
 
   .coaches__container {
-    padding: 40px 45px 100px;
+    padding: 40px 80px 100px;
   }
 
   .coaches__button-next {
@@ -4133,6 +4133,10 @@ a {
     max-width: 226px;
     padding-top: 46px;
     min-height: 0;
+  }
+
+  .coaches__info--m {
+    margin-left: 16px;
   }
 
   .coaches__achievement-list {
