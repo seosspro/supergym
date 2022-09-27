@@ -7,6 +7,7 @@
   @include font($bebas-neue, 49px, 49px, 700);
   width: 1160px;
   margin: 0 auto;
+  color: $price-title;
   margin-bottom: 53px;
   letter-spacing: 0.03em;
   overflow-wrap: break-word;
@@ -44,10 +45,10 @@
 
   &::after {
     position: relative;
-    content: url("../../img/arrow-left.svg");
+    content: url("../img/arrow-left.svg");
 
     @media (max-width: $mobile-max) {
-      content: url("../../img/arrow-left-mobile.svg");
+      content: url("../img/arrow-left-mobile.svg");
     }
   }
 }
@@ -113,6 +114,11 @@
     opacity: 1;
   }
 
+  &:focus-within .coaches__info::after,
+  &:focus-within .coaches__info > * {
+    opacity: 1;
+  }
+
   &:hover .coaches__bottom-name {
     opacity: 0;
   }
@@ -150,7 +156,6 @@
     z-index: -1;
 
     width: 100%;
-    // min-height: 294px;
     height: 100%;
 
     background-color: $coaches-hover;
@@ -231,6 +236,7 @@
 @media (max-width: $tablet-max) {
   .coaches__container {
     padding: 40px 80px 100px;
+    max-width: 620px;
   }
 
   .coaches__button-next {
@@ -293,6 +299,7 @@
   .coaches__container {
     min-height: 378px;
     padding: 34px 14px 40px;
+    max-width: 100%;
   }
 
   .coaches__title {
@@ -305,7 +312,7 @@
   }
 
   .coaches__lists-container {
-    max-width: 292px;
+    padding: 0 20px;
   }
 
   .coaches__button-next {
@@ -332,14 +339,21 @@
   }
 
   .coaches__item {
-    height: 274px;
-
     picture {
-      height: 274px;
+      width: 100%;
+
+      @media (max-width: 320px) {
+        width: 226px;
+        height: 274px;
+      }
 
       img {
-        height: 274px;
-        max-width: 226px;
+        width: 100%;
+
+        @media (max-width: 320px) {
+          width: 226px;
+          height: 274px;
+        }
       }
     }
   }

@@ -18,6 +18,7 @@
 
 .gym__title {
   @include font($bebas-neue, 49px, 49px, 700);
+  color: $price-title;
 
   margin: 0;
   margin-bottom: 8px;
@@ -28,14 +29,14 @@
 
 .gym__text {
   @include font($roboto-condensed, 18px, 27px, 400);
-
+  color: $price-title;
   margin: 0;
   margin-bottom: 38px;
 }
 
 .gym__description {
   @include font($roboto-condensed, 16px, 24px, 300);
-
+  color: $price-title;
   margin: 0;
 }
 
@@ -265,8 +266,16 @@
     padding-right: 18px;
   }
 
+  .gym__video-media {
+    width: 100%;
+  }
+
   .gym__img-wrap {
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 
   .gym__image {
@@ -283,13 +292,17 @@
 
   .gym__video {
     position: relative;
-    width: 320px;
+    width: 100%;
+    max-width: 767px;
+    min-width: 320px;
     margin: 0 auto;
     top: 0;
     left: 0;
   }
 
   .gym__video-link {
+    height: unset;
+    max-height: 285px;
     &::before {
       content: "";
       position: absolute;
@@ -306,8 +319,8 @@
 
     width: 52px;
     height: 52px;
-    top: 57px;
-    left: 136px;
+    top: 35%;
+    left: 42%;
 
     border-radius: 50%;
     background: linear-gradient(
@@ -321,10 +334,8 @@
       position: absolute;
       top: -10px;
       left: -10px;
-
       width: 72px;
       height: 73px;
-
       background-image: url("../img/video-ellipse.png");
       background-repeat: no-repeat;
       background-size: cover;

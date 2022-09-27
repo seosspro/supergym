@@ -17,7 +17,7 @@
 
 .sub__title {
   @include font($bebas-neue, 49px, 49px, 700);
-
+  color: $price-title;
   max-width: 1160px;
   margin: 0;
   margin-bottom: 35px;
@@ -189,7 +189,7 @@
 
 .sub__subtitle {
   margin: 0;
-
+  color: $price-title;
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
@@ -198,7 +198,7 @@
 .sub__time {
   margin: 0;
   margin-top: 4px;
-
+  color: $price-time;
   font-size: 16px;
   line-height: 24px;
 }
@@ -262,6 +262,7 @@
 .sub__list-hidden {
   height: 0;
   opacity: 0;
+  display: none;
 }
 
 .sub__background-circle {

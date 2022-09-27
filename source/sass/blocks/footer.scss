@@ -8,14 +8,15 @@
 .footer__container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   padding: 37px 10px 27px;
 }
 
 .footer__logo {
-  margin-top: 5px;
+  margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .footer__nav-list {
@@ -49,7 +50,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 2px;
+  margin-top: -10px;
   min-width: 110px;
   margin-left: 80px;
   column-gap: 11px;

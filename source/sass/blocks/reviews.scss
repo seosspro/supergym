@@ -7,7 +7,7 @@
 
 .reviews__title {
   @include font($bebas-neue, 49px, 49px, 700);
-
+  color: $price-title;
   max-width: 1160px;
   margin: 0 auto;
   margin-bottom: 51px;
@@ -66,10 +66,10 @@
 
   &::after {
     position: relative;
-    content: url("../../img/arrow-left.svg");
+    content: url("../img/arrow-left.svg");
 
     @media (max-width: $mobile-max) {
-      content: url("../../img/arrow-left-mobile.svg");
+      content: url("../img/arrow-left-mobile.svg");
     }
   }
 }
@@ -217,7 +217,7 @@
   }
 
   .reviews__container-wrapper {
-    max-width: 320px;
+    max-width: 100%;
   }
 
   .reviews__container {
@@ -237,7 +237,6 @@
   }
 
   .reviews__item-container {
-    width: 225px;
     padding-bottom: 140px;
     padding-top: 48px;
   }
@@ -253,8 +252,8 @@
   }
 
   .reviews__item-image {
-    top: 34px;
-    left: 35px;
+    top: 30px;
+    left: 20%;
 
     width: 68px;
     height: 68px;
@@ -273,7 +272,7 @@
   .reviews__item-text {
     @include font($roboto-condensed, 16px, 22px, 400);
 
-    max-width: 176px;
+    width: 176px;
 
     text-align: center;
   }

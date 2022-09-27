@@ -13,7 +13,7 @@
 
 .advantages__title {
   @include font($bebas-neue, 49px, 49px, 700);
-
+  color: $price-title;
   margin-bottom: 60px;
 
   letter-spacing: 0.03em;

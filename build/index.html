@@ -23,14 +23,16 @@
     <header class="header">
       <div class="container header__container">
         <div class="header__top">
-          <a href="index.html" class="header__logo" aria-label="Логотип фитнес центра Supergym">
+          <a class="header__logo" aria-label="Логотип фитнес центра Supergym">
             <svg class="header__logo-icon" width="89" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
             </svg>
           </a>
-          <a class="header__tel" href="tel:+78005555555">
-            8-800-555-55-55
-          </a>
+          <div class='header__wrapper-tel'>
+            <a class="header__tel" href="tel:+78005555555">
+              8-800-555-55-55
+            </a>
+          </div>
         </div>
         <div class="header__main">
           <div class="header__content">
@@ -38,9 +40,9 @@
             <div class="header__content-wrap">
               <h2 class="header__content-title">Фитнес центр</h2>
               <p class="header__content-text">
-                Тренажёрный зал
-                Групповые занятия
-                Кардио-зона </p>
+                <span>Тренажёрный зал</span>
+                <span>Групповые занятия</span>
+                <span>Кардио-зона</span> </p>
             </div>
             <a class="button header__button" href="#sub">Купить абонемент</a>
           </div>
@@ -94,11 +96,16 @@
           <div class="gym__text-content">
             <h2 class="gym__title">Тренажерный зал</h2>
             <p class="gym__text">Просторный зал площадью 900 кв/м</p>
-            <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
-              тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            <p class="gym__description">Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное
+              место
+              для укрепления
+              тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+              спортсменов.
             </p>
-            <p class="gym__description gym__description--hidden">В зале расположены отдельная зона для Crossfit и
-              кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов
+            <p class="gym__description gym__description--hidden">В&nbsp;зале расположены отдельная зона для
+              Crossfit и
+              кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для
+              различных видов
               групповых занятий.</p>
           </div>
           <div class="gym__img-wrap">
@@ -303,12 +310,13 @@
             <ul class="coaches__list swiper-wrapper">
               <li class="coaches__item swiper-slide">
                 <div class="coaches__item-wrap">
-                  <div class="coaches__info">
+                  <div tabindex='0' class="coaches__info">
                     <p class="coaches__info-name">Анна Павлова</p>
                     <p class="coaches__sport">Pilates</p>
                     <ul class="coaches__achievement-list">
                       <li class="coaches__achievement-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__achievement-item">Победитель чемпионата России по Pilates</li>
+                      <li class="coaches__achievement-item">Победитель чемпионата России по
+                        Pilates</li>
                       <li class="coaches__achievement-item">Опыт — 4 лет</li>
                     </ul>
                     <p class="coaches__bottom-name">Анна Павлова</p>
@@ -325,12 +333,13 @@
               </li>
               <li class="coaches__item swiper-slide">
                 <div class="coaches__item-wrap">
-                  <div class="coaches__info">
+                  <div tabindex='0' class="coaches__info">
                     <p class="coaches__info-name">Алексей Лавров</p>
                     <p class="coaches__sport">Workout</p>
                     <ul class="coaches__achievement-list">
                       <li class="coaches__achievement-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__achievement-item">Победитель чемпионата России по Workout</li>
+                      <li class="coaches__achievement-item">Победитель чемпионата России по
+                        Workout</li>
                       <li class="coaches__achievement-item">Опыт — 3 лет</li>
                     </ul>
                     <p class="coaches__bottom-name">Алексей Лавров</p>
@@ -347,12 +356,13 @@
               </li>
               <li class="coaches__item swiper-slide">
                 <div class="coaches__item-wrap">
-                  <div class="coaches__info">
+                  <div tabindex='0' class="coaches__info">
                     <p class="coaches__info-name">Александр Пашков</p>
                     <p class="coaches__sport">CrossFit</p>
                     <ul class="coaches__achievement-list">
                       <li class="coaches__achievement-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__achievement-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="coaches__achievement-item">Победитель чемпионата России по
+                        CrossFit</li>
                       <li class="coaches__achievement-item">Опыт — 6 лет</li>
                     </ul>
                     <p class="coaches__bottom-name">Александр Пашков</p>
@@ -369,12 +379,13 @@
               </li>
               <li class="coaches__item swiper-slide">
                 <div class="coaches__item-wrap">
-                  <div class="coaches__info">
+                  <div tabindex='0' class="coaches__info">
                     <p class="coaches__info-name">Мария Кетова</p>
                     <p class="coaches__sport">Fitness</p>
                     <ul class="coaches__achievement-list">
                       <li class="coaches__achievement-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__achievement-item">Победитель чемпионата России по Fitness</li>
+                      <li class="coaches__achievement-item">Победитель чемпионата России по
+                        Fitness</li>
                       <li class="coaches__achievement-item">Опыт — 5 лет</li>
                     </ul>
                     <p class="coaches__bottom-name">Мария Кетова</p>
@@ -391,12 +402,13 @@
               </li>
               <li class="coaches__item swiper-slide">
                 <div class="coaches__item-wrap">
-                  <div class="coaches__info">
+                  <div tabindex='0' class="coaches__info">
                     <p class="coaches__info-name">Анна Павлова</p>
                     <p class="coaches__sport">Pilates</p>
                     <ul class="coaches__achievement-list">
                       <li class="coaches__achievement-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__achievement-item">Победитель чемпионата России по Pilates</li>
+                      <li class="coaches__achievement-item">Победитель чемпионата России по
+                        Pilates</li>
                       <li class="coaches__achievement-item">Опыт — 4 лет</li>
                     </ul>
                     <p class="coaches__bottom-name">Анна Павлова</p>
@@ -413,12 +425,13 @@
               </li>
               <li class="coaches__item swiper-slide">
                 <div class="coaches__item-wrap">
-                  <div class="coaches__info">
+                  <div tabindex='0' class="coaches__info">
                     <p class="coaches__info-name">Алексей Лавров</p>
                     <p class="coaches__sport">Workout</p>
                     <ul class="coaches__achievement-list">
                       <li class="coaches__achievement-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__achievement-item">Победитель чемпионата России по Workout</li>
+                      <li class="coaches__achievement-item">Победитель чемпионата России по
+                        Workout</li>
                       <li class="coaches__achievement-item">Опыт — 3 лет</li>
                     </ul>
                     <p class="coaches__bottom-name">Алексей Лавров</p>
@@ -435,12 +448,13 @@
               </li>
               <li class="coaches__item swiper-slide">
                 <div class="coaches__item-wrap swiper-slide">
-                  <div class="coaches__info coaches__info--m">
+                  <div tabindex='0' class="coaches__info coaches__info--m">
                     <p class="coaches__info-name">Александр Пашков</p>
                     <p class="coaches__sport">CrossFit</p>
                     <ul class="coaches__achievement-list">
                       <li class="coaches__achievement-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__achievement-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="coaches__achievement-item">Победитель чемпионата России по
+                        CrossFit</li>
                       <li class="coaches__achievement-item">Опыт — 6 лет</li>
                     </ul>
                     <p class="coaches__bottom-name">Александр Пашков</p>
@@ -457,12 +471,13 @@
               </li>
               <li class="coaches__item swiper-slide">
                 <div class="coaches__item-wrap swiper-slide">
-                  <div class="coaches__info coaches__info--m">
+                  <div tabindex='0' class="coaches__info coaches__info--m">
                     <p class="coaches__info-name">Мария Кетова</p>
                     <p class="coaches__sport">Fitness</p>
                     <ul class="coaches__achievement-list">
                       <li class="coaches__achievement-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__achievement-item">Победитель чемпионата России по Fitness</li>
+                      <li class="coaches__achievement-item">Победитель чемпионата России по
+                        Fitness</li>
                       <li class="coaches__achievement-item">Опыт — 5 лет</li>
                     </ul>
                     <p class="coaches__bottom-name">Мария Кетова</p>
@@ -504,7 +519,8 @@
               </div>
               <div class="advantages__desc advantages__desc--parking">
                 <h3 class="advantages__desc-title">Собственная парковка</h3>
-                <p class="advantages__desc-text">Вы всегда найдете место для своей машины на нашей парковке</p>
+                <p class="advantages__desc-text">Вы всегда найдете место для своей машины на нашей
+                  парковке</p>
               </div>
             </div>
           </div>
@@ -530,7 +546,8 @@
               </div>
               <div class="advantages__desc advantages__desc--experience">
                 <h3 class="advantages__desc-title">Тренерский опыт</h3>
-                <p class="advantages__desc-text">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                <p class="advantages__desc-text">Добивайтесь своих целей быстрее с профессиональным
+                  тренером</p>
               </div>
             </div>
           </div>
@@ -569,22 +586,22 @@
               </picture>
             </div>
           </div>
-          <div class="promotions__side-content">
-            <div class="promotions__side-top">
+          <ul class="promotions__side-content">
+            <li class="promotions__side-top">
               <div class="promotions__side-wrap">
                 <h3 class="promotions__side-title">Месяц бесплатно</h3>
                 <p class="promotions__side-text">Приведи друга, получи абонемент в подарок</p>
                 <a href="#" class="promotions__side-link">Подробнее</a>
               </div>
-            </div>
-            <div class="promotions__side-bottom">
+            </li>
+            <li class="promotions__side-bottom">
               <div class="promotions__side-wrap">
                 <h3 class="promotions__side-title">Скидка 20%</h3>
                 <p class="promotions__side-text">Корпоративный фитнес с&nbsp;командой</p>
                 <a href="#" class="promotions__side-link">Подробнее</a>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="reviews">
@@ -614,9 +631,11 @@
                   </div>
                   <div class="reviews__item-wrap">
                     <h3 class="reviews__item-title">Анна Орлова</h3>
-                    <p class="reviews__item-text">&laquo;Хожу в SuperClub уже больше года. Нравится, что в клубе всегда
+                    <p class="reviews__item-text">&laquo;Хожу в SuperClub уже больше года. Нравится,
+                      что в клубе всегда
                       чисто,
-                      тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет
+                      тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее
+                      время нет
                       очередей&raquo;</p>
                   </div>
                 </div>
@@ -643,9 +662,11 @@
                   </div>
                   <div class="reviews__item-wrap">
                     <h3 class="reviews__item-title">Мария Кетова</h3>
-                    <p class="reviews__item-text">&laquo;Хожу в SuperClub уже больше года. Нравится, что в клубе всегда
+                    <p class="reviews__item-text">&laquo;Хожу в SuperClub уже больше года. Нравится,
+                      что в клубе всегда
                       чисто,
-                      тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет
+                      тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее
+                      время нет
                       очередей&raquo;</p>
                   </div>
                 </div>
@@ -669,8 +690,7 @@
                   <label class="visually-hidden" for="name">Имя</label>
                   <input type="text" id="name" name="name" placeholder="Имя" required>
                   <label class="visually-hidden" for="phone">Номер телефона</label>
-                  <input class='imaskjs' type="tel" id="phone" name="phone" placeholder="Телефон"
-                    pattern="\+7(\([0-9]{3}\))([0-9]{7})" maxlength="18"
+                  <input class='imaskjs' type="tel" id="phone" name="phone" placeholder="Телефон" maxlength="18"
                     title="+7, номер телефона должен состоять из 10 цифр" required>
                 </div>
                 <button class="button free-lesson__button" type="submit">Отправить</button>

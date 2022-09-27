@@ -9,6 +9,11 @@
   padding-bottom: 50px;
 }
 
+.header__wrapper-tel{
+  display: flex;
+  flex-direction: column;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
