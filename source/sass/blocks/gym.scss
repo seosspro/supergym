@@ -314,13 +314,16 @@
   }
 
   .gym__video-btn {
-    position: absolute;
     z-index: 2;
 
     width: 52px;
     height: 52px;
-    top: 35%;
-    left: 42%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 
     border-radius: 50%;
     background: linear-gradient(
