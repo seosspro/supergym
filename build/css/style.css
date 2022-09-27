@@ -770,6 +770,10 @@ a {
   padding-bottom: 50px;
 }
 
+.header__logo {
+  cursor: default;
+}
+
 .header__wrapper-tel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1771,7 +1775,7 @@ a {
 
 .coaches__button-next::after {
   position: relative;
-  content: url("../../img/arrow-right.svg");
+  content: url("../img/arrow-right.svg");
 }
 
 .coaches__button-next.swiper-button-disabled {
@@ -2501,7 +2505,7 @@ a {
 
 .reviews__button-next::after {
   position: relative;
-  content: url("../../img/arrow-right.svg");
+  content: url("../img/arrow-right.svg");
 }
 
 .reviews__button-next.swiper-button-disabled {
@@ -4121,7 +4125,7 @@ a {
   }
 
   .coaches__button-next::after {
-    content: url("../../img/arrow-right-mobile.svg");
+    content: url("../img/arrow-right-mobile.svg");
   }
 
   .coaches__container {
@@ -4427,7 +4431,7 @@ a {
   }
 
   .reviews__button-next::after {
-    content: url("../../img/arrow-right-mobile.svg");
+    content: url("../img/arrow-right-mobile.svg");
   }
 
   .reviews {

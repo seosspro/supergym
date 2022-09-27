@@ -70,10 +70,10 @@
 
   &::after {
     position: relative;
-    content: url("../../img/arrow-right.svg");
+    content: url("../img/arrow-right.svg");
 
     @media (max-width: $mobile-max) {
-      content: url("../../img/arrow-right-mobile.svg");
+      content: url("../img/arrow-right-mobile.svg");
     }
   }
 }

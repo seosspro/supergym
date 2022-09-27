@@ -91,10 +91,10 @@
 
   &::after {
     position: relative;
-    content: url("../../img/arrow-right.svg");
+    content: url("../img/arrow-right.svg");
 
     @media (max-width: $mobile-max) {
-      content: url("../../img/arrow-right-mobile.svg");
+      content: url("../img/arrow-right-mobile.svg");
     }
   }
 }
@@ -271,7 +271,6 @@
 
   .reviews__item-text {
     @include font($roboto-condensed, 16px, 22px, 400);
-
 
     text-align: center;
   }
